@@ -1,0 +1,337 @@
+source	korean	speaker	context	note
+アルバルト	알베르트		UI/NPC name	spec name
+タガン	타간		UI/NPC name	spec name
+ソディオ	소디오		UI/NPC name	spec name
+買取屋	매입상		UI/NPC name	spec name
+システム	시스템		UI/system	spec name
+SYSTEM	시스템		UI/system	spec name
+看板	간판		UI/sign	spec name
+親友	친구		UI/speaker label	common label
+伝説の武器商人	전설의 무기 상인		UI/speaker label	event label
+アルバルト (狩人)	알베르트 (사냥꾼)		UI/character select	
+タガン (商人)	타간 (상인)		UI/character select	
+ソディオ (魔物使い)	소디오 (마물 조련사)		UI/character select	
+はい	예		UI/choice	
+いいえ	아니요		UI/choice	
+いいよ	좋아		UI/choice	
+やめる	그만둔다		UI/choice	
+やめておく	그만둔다		UI/choice	
+ある	있어		UI/choice	
+ない	없어		UI/choice	
+はじめから	처음부터		UI/title	
+つづきから	이어하기		UI/title	
+オプション	옵션		UI/title	
+注意	주의		UI/age gate	
+- 注意 -	- 주의 -		UI/age gate	
+あなたは成人済みかつ高校生ではありませんか？	성인이며 고등학생이 아닙니까?		UI/age gate	
+このゲームは	이 게임은		UI/age gate	
+成人向け	성인용		UI/age gate	
+ゲイ向け	게이 대상		UI/age gate	
+かつ、	또한		UI/age gate	
+の要素を含みます。	요소를 포함합니다.		UI/age gate	
+いいえ」を選択するとタイトル画面に戻ります	"아니요"를 선택하면 타이틀 화면으로 돌아갑니다		UI/age gate	
+ギャラリーモード	갤러리 모드		UI/menu	
+ギャラリー	갤러리		UI/menu	
+設定	설정		UI/menu	
+設定 (Options)	설정 (Options)		UI/options	
+設定は自動的に保存されます	설정은 자동으로 저장됩니다		UI/options	
+音量	음량		UI/options	
+マスター音量	마스터 음량		UI/options	
+画面表示倍率 (Scale)	화면 배율 (Scale)		UI/options	
+バトルHUD設定	전투 HUD 설정		UI/options	
+経験値バー & レベル	경험치 바 & 레벨		UI/options	
+タイマー表示	타이머 표시		UI/options	
+所持金表示	소지금 표시		UI/options	
+ダメージ表示	피해량 표시		UI/options	
+閉じる	닫기		UI/button	
+閉じる ✕	닫기 ✕		UI/button	
+情報	정보		UI/label	
+未解放	미해금		UI/label	
+差分:	차이:		UI/label	
+すべて	전체		UI/filter	
+すべて一覧	전체 목록		UI/filter	
+全アイテム	전체 아이템		UI/filter	
+全破棄	전부 버리기		UI/debug	
+全開放	전부 해금		UI/debug	
+金貨+1000	금화+1000		UI/debug	
+⏩ Time+1m	⏩ Time+1m		UI/debug	keep debug shorthand
+🐞 Debug	🐞 Debug		UI/debug	keep English debug term
+敗北 Sim	패배 Sim		UI/debug	keep Sim shorthand
+💀 敗北 Sim	💀 패배 Sim		UI/debug	keep Sim shorthand
+発掘ポイント出現判定 (設定確率	발굴 지점 출현 판정 (설정 확률		UI/debug	extracted partial
+⛏️ 発掘ポイント出現判定 (設定確率)	⛏️ 발굴 지점 출현 판정 (설정 확률)		UI/debug	
+森 (Forest	숲 (Forest		UI/debug	extracted partial
+🌲 森 (Forest)	🌲 숲 (Forest)		UI/debug	
+砂漠 (Desert	사막 (Desert		UI/debug	extracted partial
+🏜️ 砂漠 (Desert)	🏜️ 사막 (Desert)		UI/debug	
+遺跡 (Ruins	유적 (Ruins		UI/debug	extracted partial
+🏛️ 遺跡 (Ruins)	🏛️ 유적 (Ruins)		UI/debug	
+サバイバル (Survival	서바이벌 (Survival		UI/debug	extracted partial
+⚔️ サバイバル (Survival)	⚔️ 서바이벌 (Survival)		UI/debug	
+サバイバルモード記録	서바이벌 모드 기록		UI/status	
+試練の森（サバイバルモード）へ向かいますか？	시련의 숲(서바이벌 모드)으로 갈까요?		UI/prompt	
+入場時、一時的に回復アイテム等が使用不可になります）	입장하면 회복 아이템 등을 잠시 사용할 수 없습니다)		UI/prompt	
+試練の森（サバイバル）	시련의 숲(서바이벌)		stage/name	
+狩猟の森	사냥의 숲		stage/name	
+森の小屋	숲속 오두막		stage/name	
+森の洞窟	숲속 동굴		stage/name	
+狩猟者の小屋	사냥꾼의 오두막		stage/name	
+古代の遺跡	고대 유적		stage/name	
+灼熱の砂漠	작열하는 사막		stage/name	
+サバイバルモード	서바이벌 모드		stage/mode	
+おや、誰かいる…？	어라, 누가 있나...?		field/message	
+オアシスに誰かいる…？	오아시스에 누가 있나...?		field/message	
+そろそろ帰ろう！	슬슬 돌아가자!		field/message	
+帰還中…	귀환 중...		field/message	
+倒れた	쓰러졌다		battle/message	
+倒れた...	쓰러졌다...		battle/message	
+気絶した！	기절했다!		battle/message	
+熱射に倒れた…	열기에 쓰러졌다...		battle/message	
+ナイスファイト！	잘 싸웠어!		battle/message	
+ナイスファイト！ 生存時間:	잘 싸웠어! 생존 시간:		battle/message	
+秒 スコア:	초 스코어:		battle/message	
+ボス出現！	보스 출현!		battle/message	
+⚠️ ボス出現！	⚠️ 보스 출현!		battle/message	
+敵の気配が変わった…！	적의 기척이 달라졌다...!		battle/message	
+魔物が活性化している！	마물이 활성화되고 있다!		battle/message	
+死の領域に踏み込んだ…！	죽음의 영역에 들어섰다...!		battle/message	
+アイテムを獲得しました！	아이템을 획득했습니다!		item/message	
+を手に入れた！	을(를) 손에 넣었다!		item/message	suffix fragment
+を拾った！	을(를) 주웠다!		item/message	suffix fragment
+個 手に入れた！	개를 손에 넣었다!		item/message	suffix fragment
+を渡した！ 貢献度が上がった！	을(를) 건넸다! 공헌도가 올랐다!		item/message	suffix fragment
+オートセーブしました	자동 저장했습니다		system/save	
+アイテムを使う	아이템 사용		UI/inventory	
+✨ アイテムを使う	✨ 아이템 사용		UI/inventory	
+アイテムがありません	아이템이 없습니다		UI/inventory	
+アイテムを選択してください	아이템을 선택하세요		UI/inventory	
+左のリストから	왼쪽 목록에서		UI/inventory	
+所持品	소지품		UI/inventory	
+🎒 所持品	🎒 소지품		UI/inventory	
+消耗品	소모품		UI/shop	
+装備品	장비		UI/shop	
+装備品・その他	장비 및 기타		UI/shop	
+使用可能な場所:	사용 가능 장소:		UI/item detail	
+現在の攻撃力ボーナス: +	현재 공격력 보너스: +		UI/item detail	
+現在の被ダメージ軽減: -	현재 받는 피해 감소: -		UI/item detail	
+発掘:	발굴:		UI/item detail	
+コスト:	코스트:		UI/pet	
+勲章数:	훈장 수:		UI/status	
+友好度	우호도		UI/status	
+貢献度	공헌도		UI/status	
+貢献度・友好度	공헌도/우호도		UI/status	
+ペット	펫		UI/pet	
+ペットを連れていません	동행 중인 펫이 없습니다		UI/pet	
+連れ歩き中	동행 중		UI/pet	
+ペットコスト上限UP	펫 코스트 상한 UP		UI/pet	
+編成・育成	편성/육성		UI/pet	
+モンスターハウス	몬스터 하우스		UI/pet	
+孵化 (Eggs)	부화 (Eggs)		UI/pet	
+孵化 (Eggs	부화 (Eggs		UI/pet	extracted partial
+✨ 孵化させる	✨ 부화시키기		UI/pet	
+対象を選択してください	대상을 선택하세요		UI/pet	
+現在のコスト/最大:	현재 코스트/최대:		UI/pet	
+連れて行く	데려가기		UI/pet	
+戻す	돌려보내기		UI/pet	
+同種重複	같은 종 중복		UI/pet	
+コスト超過	코스트 초과		UI/pet	
+最大	최대		UI/pet	
+エサをあげる (所持:	먹이 주기 (소지:		UI/pet	extracted partial
+蘇生が必要なペットはいません	부활이 필요한 펫이 없습니다		UI/pet	
+ペットを蘇生しました	펫을 부활시켰습니다		UI/pet	
+ペット用	펫용		UI/pet	
+ペットの蘇生	펫 부활		UI/pet	
+が産まれた！	이(가) 태어났다!		UI/pet	suffix fragment
+のレベルが	의 레벨이		UI/pet	fragment
+になった！	이(가) 되었다!		UI/pet	fragment
+を与えた (EXP	을(를) 줬다 (EXP		UI/pet	fragment
+のリザレクション！	의 리저렉션!		UI/pet	skill name fragment
+同じ種類のモンスターは連れて行けません	같은 종류의 몬스터는 데려갈 수 없습니다		UI/pet error	
+コスト上限を超えています (Max:	코스트 상한을 초과했습니다 (Max:		UI/pet error	extracted partial
+買い物をする	물건을 산다		UI/shop choice	
+よろず屋 タガン	잡화점 타간		UI/shop	
+一点物アイテム	단 하나뿐인 아이템		UI/shop	
+※ 一点物アイテム ※	※ 단 하나뿐인 아이템 ※		UI/shop	
+購入する	구매하기		UI/shop	
+売却する	판매하기		UI/shop	
+売却するアイテムを選択してください (買取価格: 50%)	판매할 아이템을 선택하세요 (매입가: 50%)		UI/shop	
+売却できるアイテムがありません	판매할 수 있는 아이템이 없습니다		UI/shop	
+売り切れ (購入済み)	품절 (구매 완료)		UI/shop	
+売り切れ (購入済み	품절 (구매 완료		UI/shop	extracted partial
+所持済	보유 중		UI/shop	
+資金不足	자금 부족		UI/shop	
+資金不足...	자금 부족...		UI/shop	
+商人を支援する	상인 지원하기		UI/shop	
+商会への出資	상회 출자		UI/donation	
+⚜️ 商会への出資 ⚜️	⚜️ 상회 출자 ⚜️		UI/donation	
+いくら寄付しますか？	얼마를 기부할까요?		UI/donation	
+寄付する	기부하기		UI/donation	
+寄付してくれんのか？	기부해 주는 거냐?	タガン	UI/donation	merchant short line
+所持金	소지금		UI/donation	
+全額	전액		UI/donation	
+処理中	처리 중		UI/donation	
+有効な金額を入力してください	올바른 금액을 입력해 주세요		UI/donation error	
+一度に寄付できるのは5000Gまでです	한 번에 기부할 수 있는 금액은 5000G까지입니다		UI/donation error	
+所持金が足りません。	소지금이 부족합니다.		UI/error	
+ありがとうございます！大切に使わせていただきます。	고맙다! 허투루 쓰지 않으마.		UI/donation thanks	
+これほどまでの寄付をいただけるとは、本当に助かります。	이만큼이나 보태 줄 줄이야, 정말 큰 도움이 됐다.		UI/donation thanks	
+あなたは私の、いや、この街の恩人です！	너는 내, 아니 이 마을의 은인이다!		UI/donation thanks	
+おお…なんと…！	오오… 이거 참…!		UI/donation thanks	
+回復薬	회복약		item/name	
+上級回復薬	상급 회복약		item/name	
+力の霊薬	힘의 영약		item/name	
+守りの秘薬	수호의 비약		item/name	
+富の護符	부의 부적		item/name	
+帰還のスクロール	귀환 스크롤		item/name	
+経験値オーブ	경험치 오브		item/name	
+魔物のエサ	마물 먹이		item/name	
+生命の枝	생명의 가지		item/name	
+狩猟ブーメラン	사냥 부메랑		item/name	
+自動弓タレット	자동 활 터렛		item/name	
+拡散矢キット	확산 화살 키트		item/name	
+爆発罠の袋	폭발 함정 주머니		item/name	
+風の歩法の書	바람 걸음의 서		item/name	
+見習いの鎧	견습생 갑옷		item/name	
+魔法の矢	마법 화살		item/name	
+金貨	금화		item/name	
+蒼い球	푸른 구슬		item/name	
+蒼の宝珠	푸른 보주		event/item name	
+不純物の少ない石炭	불순물이 적은 석탄		item/gift	
+高純度の金剛砥石	고순도 금강 숫돌		item/gift	
+神代の真鉄	신대의 진철		item/gift	
+防水用の獣脂	방수용 짐승 기름		item/gift	
+疾風鳥の尾羽	질풍새의 꼬리깃		item/gift	
+千年樹の心材	천년수 심재		item/gift	
+柔らかな綿毛	부드러운 솜털		item/gift	
+琥珀の蜜蝋	호박 밀랍		item/gift	
+聖樹の完熟果実	성수의 완숙 열매		item/gift	
+鉄の矢じり	철 화살촉		item/gift	
+アルバルトの勲章	알베르트의 훈장		item/medal	
+タガンの勲章	타간의 훈장		item/medal	
+ソディオの勲章	소디오의 훈장		item/medal	
+スライムの卵	슬라임의 알		item/egg	
+リーフマンの卵	리프맨의 알		item/egg	
+ゴーレムの卵	골렘의 알		item/egg	
+ドラゴンの卵	드래곤의 알		item/egg	
+レッドスライムの卵	레드 슬라임의 알		item/egg	
+アビスドラゴンの卵	어비스 드래곤의 알		item/egg	
+天使の卵	천사의 알		item/egg	
+砂男の卵	샌드맨의 알		item/egg	
+ゴールドスライムの卵	골드 슬라임의 알		item/egg	
+スライムの卵 (ペット	슬라임의 알 (펫		item/shop partial	
+リーフマンの卵 (ペット	리프맨의 알 (펫		item/shop partial	
+ゴーレムの卵 (ペット	골렘의 알 (펫		item/shop partial	
+ドラゴンの卵 (ペット	드래곤의 알 (펫		item/shop partial	
+レッドスライムの卵 (ペット	레드 슬라임의 알 (펫		item/shop partial	
+アビスドラゴンの卵 (ペット	어비스 드래곤의 알 (펫		item/shop partial	
+天使の卵 (ペット	천사의 알 (펫		item/shop partial	
+砂男の卵 (ペット	샌드맨의 알 (펫		item/shop partial	
+ゴールドスライムの卵 (ペット	골드 슬라임의 알 (펫		item/shop partial	
+を50回復する。	을(를) 50 회복한다.		item/effect fragment	
+を100回復する。	을(를) 100 회복한다.		item/effect fragment	
+一時的に攻撃力を強化する。	일시적으로 공격력을 강화한다.		item/effect	
+瞬時に街へ帰還する。	즉시 마을로 귀환한다.		item/effect	
+経験値を得られる不思議なオーブ。	경험치를 얻을 수 있는 신비한 오브.		item/effect	
+ペットに与えると経験値を獲得する(Exp+10)。	펫에게 주면 경험치를 얻는다(Exp+10).		item/effect	
+力尽きたペットを蘇生させる枝。	쓰러진 펫을 부활시키는 가지.		item/effect	
+移動しながら攻撃できるようになる奥義書。	이동하면서 공격할 수 있게 되는 비전서.		item/effect	
+所持しているだけで自動発動	소지하고 있으면 자동 발동		item/effect	
+所持している分だけ受けるダメージを軽減する。（パッシブ効果）	소지한 수만큼 받는 피해를 줄인다. (패시브 효과)		item/effect	
+所持している分だけ弓矢やタレットの威力が強化される。（パッシブ効果）	소지한 수만큼 화살과 터렛의 위력이 강화된다. (패시브 효과)		item/effect	
+自動でブーメランを投擲する。	자동으로 부메랑을 던진다.		item/effect	
+定期的に自動弓を設置する。	주기적으로 자동 활을 설치한다.		item/effect	
+矢が3方向に拡散する。	화살이 3방향으로 퍼진다.		item/effect	
+移動時に足元へ罠を設置する。	이동 시 발밑에 함정을 설치한다.		item/effect	
+攻撃力 +1	공격력 +1		item/effect short	
+攻撃力 +2 (60秒	공격력 +2 (60초		item/effect short	
+被ダメ軽減 20% (60秒	받는 피해 감소 20% (60초		item/effect short	
+ダメージ軽減 +10%	피해 감소 +10%		item/effect short	
+コイン獲得 1	코인 획득 1		item/effect short	
+倍 (60秒	배 (60초		item/effect short	
+街へテレポート	마을로 텔레포트		item/effect short	
+自動ブーメラン	자동 부메랑		item/effect short	
+自動タレット設置	자동 터렛 설치		item/effect short	
+拡散ショット追加	확산 사격 추가		item/effect short	
+自動罠設置	자동 함정 설치		item/effect short	
+移動撃ちが可能になる	이동 사격 가능		item/effect short	
+ブーツや弓の弦に塗るメンテナンス素材。アルバルトへのプレゼントに使えそうだ。	부츠나 활시위에 바르는 관리 소재. 알베르트에게 선물할 수 있을 것 같다.		item/description	
+古代の遺跡から見つかる伝説の金属。タガンへのプレゼントに使えそうだ。	고대 유적에서 발견되는 전설의 금속. 타간에게 선물할 수 있을 것 같다.		item/description	
+日常の火床に欠かせない良質な燃料。タガンへのプレゼントに使えそうだ。	일상 화덕에 꼭 필요한 양질의 연료. 타간에게 선물할 수 있을 것 같다.		item/description	
+研磨の仕上げに使う最高級の素材。タガンへのプレゼントに使えそうだ。	연마 마무리에 쓰는 최고급 소재. 타간에게 선물할 수 있을 것 같다.		item/description	
+非常に軽く強靭な羽。アルバルトへのプレゼントに使えそうだ。	매우 가볍고 질긴 깃털. 알베르트에게 선물할 수 있을 것 같다.		item/description	
+魔法を帯びた巨樹の最も硬い中心部。アルバルトへのプレゼントに使えそうだ。	마법을 머금은 거목의 가장 단단한 중심부. 알베르트에게 선물할 수 있을 것 같다.		item/description	
+幼体の寝床に敷くための素材。ソディオへのプレゼントに使えそうだ。	어린 개체의 잠자리에 깔아 줄 소재. 소디오에게 선물할 수 있을 것 같다.		item/description	
+弱った個体の再生を促す奇跡の素材。ソディオへのプレゼントに使えそうだ。	약해진 개체의 재생을 돕는 기적의 소재. 소디오에게 선물할 수 있을 것 같다.		item/description	
+魔物の体表を保護するクリームの原料。ソディオへのプレゼントに使えそうだ。	마물의 체표를 보호하는 크림의 원료. 소디오에게 선물할 수 있을 것 같다.		item/description	
+熟練狩人の証。移動速度、攻撃力、射程が+10%される。	숙련 사냥꾼의 증표. 이동 속도, 공격력, 사거리가 +10% 오른다.		item/description	
+大商人の証。獲得ゴールドが+10%される。	대상인의 증표. 획득 골드가 +10% 오른다.		item/description	
+モンスターブリーダーの証。ペットの編成コスト上限が+3される。	몬스터 브리더의 증표. 펫 편성 코스트 상한이 +3 오른다.		item/description	
+通貨として使用できる金貨。	화폐로 사용할 수 있는 금화.		item/description	
+青くて丸い球体、ガラスに包まれた液体のような重さを感じる。	푸르고 둥근 구체. 유리에 감싼 액체 같은 묵직함이 느껴진다.		item/description	
+スライム	슬라임		monster/name	
+レッドスライム	레드 슬라임		monster/name	
+ゴールドスライム	골드 슬라임		monster/name	
+リーフマン	리프맨		monster/name	
+ミニゴーレム	미니 골렘		monster/name	
+ミニドラゴン	미니 드래곤		monster/name	
+アビスドラゴン	어비스 드래곤		monster/name	
+エンジェル	엔젤		monster/name	
+サンドマン	샌드맨		monster/name	
+インフェルノ	인페르노		enemy/name	
+カースボール	커스 볼		enemy/name	
+クリスタル・ビースト	크리스털 비스트		enemy/name	
+コズミック・ヴォイド	코즈믹 보이드		enemy/name	
+スカウト・ボット	스카우트 봇		enemy/name	
+トレント・エルダー	트렌트 엘더		enemy/name	
+フォールン・エンジェル	폴른 엔젤		enemy/name	
+フレア・ドレイク	플레어 드레이크		enemy/name	
+ポッド・ドロイド	포드 드로이드		enemy/name	
+マスタード・ジェル	머스터드 젤		enemy/name	
+マゼンタ・ヴァイン	마젠타 바인		enemy/name	
+マッシュ・ポポ	머시 포포		enemy/name	ambiguous pun/name
+マッド・スライム	머드 슬라임		enemy/name	
+リトル・デーモン	리틀 데몬		enemy/name	
+ルインズファントム	루인즈 팬텀		enemy/name	
+古代の守護者	고대의 수호자		enemy/name	
+森林のぬし	숲의 주인		enemy/name	
+砂塵の覇者ドレイク	모래먼지의 패자 드레이크		enemy/name	
+重装歩兵アイアンギア	중장보병 아이언기어		enemy/name	
+パルスレーザー	펄스 레이저		enemy/skill	
+ホーリーレイ	홀리 레이		enemy/skill	
+ブラックホール	블랙홀		enemy/skill	
+根の拘束	뿌리 구속		enemy/skill	
+火炎放射	화염 방사		enemy/skill	
+プルプルした相棒。体当たりで敵を攻撃する。	말랑말랑한 동료. 몸통박치기로 적을 공격한다.		monster/description	
+赤いスライム。5秒ごとに足元に残り火を残し、敵にダメージを与える。	붉은 슬라임. 5초마다 발밑에 잔불을 남겨 적에게 피해를 준다.		monster/description	
+森の精霊。遠くから葉っぱの手裏剣で援護する。	숲의 정령. 멀리서 잎사귀 표창으로 지원한다.		monster/description	
+硬い岩の体を持つ。動きは遅いが頑丈で、発掘が得意。	단단한 바위 몸을 지녔다. 움직임은 느리지만 튼튼하고 발굴에 능하다.		monster/description	
+空を飛ぶ小さな竜。火球を吐き、残り火で敵を焼く。	하늘을 나는 작은 용. 화구를 뿜고 잔불로 적을 태운다.		monster/description	
+深淵より現れた黒き竜。5方向へ広がる強力な火炎を放つ。	심연에서 나타난 검은 용. 5방향으로 퍼지는 강력한 화염을 뿜는다.		monster/description	
+砂の魔人。敵を遅くする砂の罠を仕掛ける。	모래의 마인. 적을 느리게 하는 모래 함정을 설치한다.		monster/description	
+素早い動きが得意だが、打たれ弱い。	재빠른 움직임이 장점이지만 맷집은 약하다.		character/description	
+バランスの取れた標準的な冒険者。	균형 잡힌 표준형 모험가.		character/description	
+高い体力を誇るが、足は遅い。	체력이 높지만 발은 느리다.		character/description	
+アルバルトへの恩返し	알베르트에게 보답		event/title	
+身体を張った恩返し	몸으로 갚는 보답		event/title	adult event title kept restrained
+遺跡の罠にはまったアルバルト	유적의 함정에 빠진 알베르트		event/title	
+古代遺跡の落とし穴	고대 유적의 함정 구덩이		event/title	
+タガンとの会話	타간과의 대화		event/title	
+タガンとの会話２	타간과의 대화 2		event/title	
+タガンとの会話３	타간과의 대화 3		event/title	
+タガンとの時間１	타간과의 시간 1		event/title	
+タガンとの時間２	타간과의 시간 2		event/title	
+タガンとの時間３	타간과의 시간 3		event/title	
+タガンとの時間４	타간과의 시간 4		event/title	
+タガンとの時間	타간과의 시간		event/title	
+砂漠の水源	사막의 수원		event/title	
+砂漠に水が戻った日	사막에 물이 돌아온 날		event/title	
+ソディオとの手入れ	소디오와 함께하는 손질		event/title	
+スライムの手入れのひととき	슬라임을 손질하는 한때		event/title	
+蒼の宝珠がまさか…	푸른 보주가 설마...		event/title	
+予想以上に無茶苦茶な夜	예상보다 더 엉망진창인 밤		event/title	
+プレゼントを渡す	선물 건네기		UI/choice	
+個人的な頼みがあるんだ	개인적으로 부탁할 게 있어		UI/choice	
+アルバルトについて	알베르트에 대해		UI/choice	
+アルバルトとエッチしたい	알베르트와 하고 싶어		UI/choice adult	
+タガンとエッチしたい	타간과 하고 싶어		UI/choice adult	
+タガンを抱きたい	타간을 안고 싶어		UI/choice adult	

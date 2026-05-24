@@ -1,0 +1,67 @@
+source	korean	speaker	context	note
+ソディオ	소디오	ソディオ	name	Name policy
+ソディオ (魔物使い	소디오 (마물 조련사	ソディオ	ui	Character gallery label; source appears without closing paren
+ソディオの勲章	소디오의 훈장	ソディオ	item	Medal name
+ソディオとの手入れ	소디오와 함께하는 손질	ソディオ	gallery	Gallery/event title
+スライムの手入れのひととき	슬라임을 손질하는 한때	ソディオ	gallery	Gallery/event title
+モンスターハウス	몬스터 하우스	ソディオ	ui	Monster manager menu
+やぁ、こんにちは。	안녕, 어서 와.	ソディオ	breeder_talk	Greeting
+また何かあったらおいで。	또 무슨 일 있으면 찾아와.	ソディオ	breeder_bye	Farewell
+…と思ったけど、君はモンスターの卵を持ってないみたいだね	...라고 하려 했는데, 너는 몬스터 알을 가지고 있지 않은 것 같네.	ソディオ	breeder_no_egg	Gentle correction
+モンスターの卵を手に入れたらまたおいで	몬스터 알을 손에 넣으면 다시 와.	ソディオ	breeder_no_egg	Instruction
+君もずいぶんいろんなモンスターと親睦を深めるようになったみたいだね…！	너도 꽤 여러 몬스터와 친해지게 된 것 같네...!	ソディオ	breeder_max_event	Affinity event opening
+そうだ！もしよかったら今からモンスターの入浴のお手伝いしてくれないかな？	맞다! 괜찮으면 지금부터 몬스터 목욕시키는 걸 좀 도와줄래?	ソディオ	breeder_max_event	Request
+そうかい！ありがとう！	그래! 고마워!	ソディオ	breeder_max_event_accept	Thanks
+分かった、気が向いたときでいいよ！	알았어, 마음이 내킬 때 해 줘도 괜찮아!	ソディオ	breeder_max_event_reject	Soft rejection response
+よーしそれじゃ、今からこの子の汚れを落としてあげよう。	좋아, 그럼 이제 이 아이의 더러움을 씻겨 주자.	ソディオ	breeder_max_event_main	Instruction
+スライムの体って、地面の砂や埃を巻き込みやすいからね。\n放っておくと弾力がなくなっちゃうんだ。	슬라임 몸은 땅의 모래나 먼지를 끌어안기 쉬워서 말이야.\n그대로 두면 탄력이 없어져 버리거든.	ソディオ	breeder_max_event_main	Preserve line break as \n
+……よし、君はそっちから見ててくれるかな？	...좋아, 너는 그쪽에서 봐 줄래?	ソディオ	breeder_max_event_main	Instruction
+……うん、上の方は綺麗になったかな。\n……おっと、君、ずいぶん低い姿勢で……。	...응, 위쪽은 깨끗해진 것 같네.\n...어라, 너, 꽤 낮은 자세로....	ソディオ	breeder_max_event_main	Preserve line break as \n
+ああ、なるほど！\n光に透かせば溜まった気泡やゴミがよく分かるもんね！	아, 그렇구나!\n빛에 비춰 보면 고인 기포나 먼지가 잘 보이니까!	ソディオ	breeder_max_event_main	Preserve line break as \n
+助かるよ。スライムの健康は『透過度』で決まるからね。\n下から透かして見ないと、核の周りの濁りには気づきにくいんだ。	도움이 돼. 슬라임의 건강은 '투명도'로 결정되거든.\n아래에서 비춰 보지 않으면 핵 주변의 탁함은 알아차리기 어려워.	ソディオ	breeder_max_event_main	Preserve line break as \n
+……どうかな？ 何か変なものは混じってない？	...어때? 뭔가 이상한 게 섞여 있지는 않아?	ソディオ	breeder_max_event_main	Check
+ふふ、そんなに真剣に覗き込まれると、この子も少し照れてるみたいだよ	후후, 그렇게 진지하게 들여다보면 이 아이도 조금 부끄러운가 봐.	ソディオ	breeder_max_event_main	Light teasing
+ん？あぁ、そうだよ、調教されたスライムでも\nこうしてリラックスすると溶解液出しちゃって服が溶けることがあるからね。	응? 아, 맞아. 조련된 슬라임이라도\n이렇게 긴장이 풀리면 용해액이 나와서 옷이 녹을 때가 있거든.	ソディオ	breeder_max_event_part2	Preserve line break as \n
+前にうっかり服のまま洗おうとしたら、一瞬でボロボロにされて参ったよ。\n……まあ、今はこうして、お互い気兼ねなくやれるからいいけどさ。	전에 깜빡하고 옷을 입은 채 씻기려 했다가 순식간에 너덜너덜해져서 곤란했어.\n...뭐, 지금은 이렇게 서로 편하게 할 수 있으니 괜찮지만.	ソディオ	breeder_max_event_part2	Preserve line break as \n
+君も洗ってあげるときは服は脱いでおくのがいいよ	너도 씻겨 줄 때는 옷을 벗어 두는 게 좋아.	ソディオ	breeder_max_event_part2	Advice
+パンツ！？脱がないよ！	속옷!? 안 벗어!	ソディオ	breeder_max_event_part3	Flustered
+いや、そりゃ、だって…恥ずかしいよ…	아니, 그야, 그건... 부끄럽잖아...	ソディオ	breeder_max_event_part4	Embarrassed
+いやいやいや！君がいるだろ？	아니 아니 아니! 네가 있잖아?	ソディオ	breeder_max_event_part5	Flustered
+えっ…！？そ、そんなことないよ！？	어...!? 그, 그런 거 아니야!?	ソディオ	breeder_max_event_branch1_a	Flustered
+なっ…！？何言ってるんだい！？	뭐...!? 무슨 말을 하는 거야!?	ソディオ	breeder_max_event_branch2_ab	Flustered
+そ、そうだよ！さ！作業やっちゃおう！	그, 그래! 자! 일이나 마저 하자!	ソディオ	breeder_max_event_ending	Recovering from embarrassment
+よーし！おかげ様でいつもより奇麗にしてあげれたよ！ありがとう！	좋아! 덕분에 평소보다 더 깨끗하게 씻겨 줄 수 있었어! 고마워!	ソディオ	breeder_max_event_ending	Thanks
+これからも、たくさんのモンスターたちと出会えるといいね。\n応援しているよ！	앞으로도 많은 몬스터들과 만날 수 있으면 좋겠다.\n응원하고 있을게!	ソディオ	breeder_max_event_ending	Preserve line break as \n
+いいよ	좋아	PLAYER	breeder_max_event	choice Accept
+また後で	나중에 다시 올게	PLAYER	breeder_max_event	choice Reject
+こういうとき服は脱ぐんだね	이럴 때는 옷을 벗는구나	PLAYER	breeder_max_event	choice Observation
+パンツは脱がないの？	속옷은 안 벗어?	PLAYER	breeder_max_event	choice Teasing question
+なんで？	왜?	PLAYER	breeder_max_event	choice Follow-up
+誰も見てないよ	아무도 안 보고 있어	PLAYER	breeder_max_event	choice Teasing
+もしかして、何か隠してる？	혹시 뭔가 숨기고 있어?	PLAYER	breeder_max_event	choice Teasing
+そうだね	그렇네	PLAYER	breeder_max_event	choice Agree
+包茎？	포경이야?	PLAYER	breeder_max_event	Adult teasing; kept direct
+ミニサイズとか　　？	작은 편이라든가...?	PLAYER	breeder_max_event	Preserves teasing intent; spacing normalized
+そっか、気のせいだね	그렇구나, 착각이었네	PLAYER	breeder_max_event	choice De-escalation
+スライム	슬라임	ソディオ	monster	Pet/monster name
+スライムの卵	슬라임의 알	ソディオ	item	Monster egg
+ゴールドスライム	골드 슬라임	ソディオ	monster	Pet/monster name
+ゴールドスライムの卵	골드 슬라임의 알	ソディオ	item	Monster egg
+レッドスライム	레드 슬라임	ソディオ	monster	Pet/monster name
+レッドスライムの卵	레드 슬라임의 알	ソディオ	item	Monster egg
+魔物のエサ	마물 먹이	ソディオ	item	Pet food
+ペットに与えると経験値を獲得する(Exp+10)。	펫에게 주면 경험치를 얻는다(Exp+10).	ソディオ	item	Pet food description
+幼体の寝床に敷くための素材。ソディオへのプレゼントに使えそうだ。	어린 개체의 잠자리에 깔아 줄 소재. 소디오에게 선물할 수 있을 것 같다.	ソディオ	item	Gift description
+弱った個体の再生を促す奇跡の素材。ソディオへのプレゼントに使えそうだ。	약해진 개체의 재생을 돕는 기적의 소재. 소디오에게 선물할 수 있을 것 같다.	ソディオ	item	Gift description
+魔物の体表を保護するクリームの原料。ソディオへのプレゼントに使えそうだ。	마물의 체표를 보호하는 크림의 원료. 소디오에게 선물할 수 있을 것 같다.	ソディオ	item	Gift description
+モンスターブリーダーの証。ペットの編成コスト上限が+3される。	몬스터 브리더의 증표. 펫 편성 코스트 상한이 +3 오른다.	ソディオ	item	Medal description
+同じ種類のモンスターは連れて行けません	같은 종류의 몬스터는 데려갈 수 없습니다	ソディオ	ui	Monster house validation
+ペットを連れていません	동행 중인 펫이 없습니다	ソディオ	ui	Monster house status
+蘇生が必要なペットはいません	부활이 필요한 펫이 없습니다	ソディオ	ui	Monster house status
+ペットを蘇生しました	펫을 부활시켰습니다	ソディオ	ui	Monster house status
+コスト上限を超えています (Max:	코스트 상한을 초과했습니다 (Max:	ソディオ	ui	Monster house validation; partial UI string
+プルプルした相棒。体当たりで敵を攻撃する。	말랑말랑한 동료. 몸통박치기로 적을 공격한다.	ソディオ	monster	Slime description
+赤いスライム。5秒ごとに足元に残り火を残し、敵にダメージを与える。	붉은 슬라임. 5초마다 발밑에 잔불을 남겨 적에게 피해를 준다.	ソディオ	monster	Red slime description
+まばゆい黄金の光を放つ、高貴なスライムの卵。	눈부신 황금빛을 내는 고귀한 슬라임의 알.	ソディオ	item	Gold slime egg description
+プルプルした何かが産まれそうな卵。	말랑말랑한 무언가가 태어날 것 같은 알.	ソディオ	item	Slime egg description
+熱を帯びた、赤い何かが産まれそうな卵。	열기를 머금은 붉은 무언가가 태어날 것 같은 알.	ソディオ	item	Red slime egg description
