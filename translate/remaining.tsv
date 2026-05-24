@@ -1,0 +1,50 @@
+source	korean	speaker	context	note
+……で、そろそろいい加減にして欲しいって時に、たまたま総隊副長が来てよ。	……그래서 이제 슬슬 그만 좀 했으면 싶던 참에, 마침 총대 부단장이 온 거야.	タガン	scenario	adult talk continuation
+まぁ、世の中にはお前みたいな、他人とは一風変わったこだわりを持ってる奴もいるんだな	뭐, 세상에는 너처럼 남들과는 좀 다른 집착을 가진 녀석도 있는 법이구나.	タガン	scenario	affinity reflection
+普通の奴なら言わねぇような突飛なことを平気で頼んできたり、かと思えば満足してサッと引いたり……。	보통 녀석이면 입 밖에도 안 낼 엉뚱한 부탁을 태연히 해 오다가도, 만족하면 또 휙 물러나고……	タガン	scenario	affinity reflection
+やめないで	그만두지 마	PLAYER	choice	adult choice
+やめよう	그만하자	PLAYER	choice	adult choice
+！？！？　なっ！？おいおい！くすぐってぇぞ！？そんなに顔動かしたら俺のケツ毛が絡まっちまうぞ(笑)	!?!? 뭐!? 어이 어이! 간지럽잖아!? 그렇게 얼굴을 움직이면 내 엉덩이털이 엉켜 버린다고. 하하.	タガン	scenario	adult event comedic line
+……くそ、……っ、お前のチンポが、……っ, どこに触れてんのか……、……全部、分かりやがる……ッ。	……젠장, ……윽, 네 자지가, ……어디에 닿는지…… ……전부, 느껴지잖아……!	タガン	scenario	adult event
+……ッ、はぁ……ッ！\n ……あぁ、くそ……ッ！ ……頭の中が、……真っ白に, なりやがる……！	……읏, 하아……!\n ……아아, 젠장……! ……머릿속이, ……새하얘져 버리잖아……!	タガン	scenario	adult event
+あっ！ああああっっ！があぁあああぁぁぁっっ！！	앗! 아아아아앗! 가아아아아아아앗!!	タガン	scenario	adult event exclamation
+よぉ、気を付けて行ってこいよ！	여어, 조심해서 다녀와라!	アルバルト	dialogue	stage departure
+この場所について	이 장소에 대해	PLAYER	choice	location talk
+……ふぅ。こうして天井を見上げると、妙に落ち着かねぇな。[wait:0.5]……おい、突っ立ってないでこっち来いよ。……お前の気が済むまで、好きにしろ。	……후우. 이렇게 천장을 올려다보고 있으니 묘하게 진정이 안 되네.[wait:0.5] ……야, 멀뚱히 서 있지 말고 이리 와. ……네 마음이 풀릴 때까지, 하고 싶은 대로 해.	アルバルト	max event	adult event; token preserved
+（アルバルトに近づき、肌に触れる）	(알베르트에게 다가가 피부에 닿는다)	PLAYER	choice	adult event narration choice
+（主人公がアルバルトの身体に触れ、愛撫が始まる）	(주인공이 알베르트의 몸에 손을 대고, 애무가 시작된다)		adult narration	adult event
+っ……！[wait:0.5]あ……おい、そこは……っ。	읏……![wait:0.5] 아…… 야, 거기는……	アルバルト	max event	adult event; token preserved
+……はは、お前の指、意外と大胆なんだな。……砂漠での一件もそうだが……お前に触られると、なんだか調子が狂うぜ。	……하하, 네 손가락, 의외로 대담하네. ……사막에서 있었던 일도 그렇고…… 네가 만지면 어쩐지 페이스가 흐트러진다.	アルバルト	max event	adult event
+（アルバルトの大胸筋に触れながら耳元で囁く）	(알베르트의 대흉근을 만지며 귓가에 속삭인다)	PLAYER	choice	adult event narration choice
+……ッ、！？[wait:0.5]……あ、ぐ……ッ！！	……읏, !?[wait:0.5] ……아, 윽……!!	アルバルト	max event	adult event; token preserved
+……ふぅ、……ふぅ……。……大丈夫だ、止まるな。	……후우, ……후우……. ……괜찮아, 멈추지 마.	アルバルト	max event	adult event
+[wait:0.5]……お前、そんなに申し訳なさそうな顔すんなって。……ちょっと、驚いただけだ。	[wait:0.5]……너, 그렇게 미안한 얼굴 하지 말라니까. ……조금 놀랐을 뿐이야.	アルバルト	max event	adult event; token preserved
+……ほら、もっと……奥まで来いよ。	……자, 더…… 깊이 와.	アルバルト	max event	adult event
+[wait:0.5]……俺の中、お前の熱いので、いっぱいにしてくれ……。	[wait:0.5]……내 안을 네 뜨거운 걸로 가득 채워 줘……	アルバルト	max event	adult event; token preserved
+（彼の腰を引き寄せ、優しく突き上げる）	(그의 허리를 끌어당겨 부드럽게 밀어 올린다)	PLAYER	choice	adult event narration choice
+最高の恩返しだったよ	최고의 보답이었어	PLAYER	choice	adult event choice
+年齢	나이	PLAYER	choice	profile question
+家族	가족	PLAYER	choice	profile question
+チンポの大きさ	자지 크기	PLAYER	choice	adult profile question
+[se:se_tentacle2]あっ！？え！？\n宝珠じゃない！？なんだこれ！？	[se:se_tentacle2]앗!? 어!?\n보주가 아니잖아!? 이게 뭐야!?	アルバルト	event	blue orb event; token preserved
+[se:se_wind]えっ！？	[se:se_wind]뭐!?	アルバルト	event	blue orb event; token preserved
+[se:se_wind]ふっ！？服が溶ける！？	[se:se_wind]으!? 옷이 녹는다고!?	アルバルト	event	blue orb event; token preserved
+おっ、おい！すまん！\n[wait]助けてくれ~！！	어, 어이! 미안하다!\n[wait]도와줘~!!	アルバルト	event	blue orb event; token preserved
+灼熱の砂漠へ	작열하는 사막으로	PLAYER	stage choice	stage destination
+古代の遺跡へ	고대 유적으로	PLAYER	stage choice	stage destination
+試練の森（サバイバルモード）へ向かいますか？\n（※入場時、一時的に回復アイテム等が使用不可になります）	시련의 숲(서바이벌 모드)으로 향할까요?\n(※ 입장 시 회복 아이템 등을 일시적으로 사용할 수 없습니다)	システム	prompt	survival mode prompt; token preserved
+挑戦する	도전한다	PLAYER	choice	survival mode
+記録を見る	기록 보기	PLAYER	choice	survival mode
+◆ サバイバルモード記録 ◆\n自己ベスト: {survivalHighScore} pt\n\n（さらに記録を伸ばそう！）	◆ 서바이벌 모드 기록 ◆\n개인 최고: {survivalHighScore} pt\n\n(기록을 더 늘려 보자!)	システム	status	survival record; placeholder preserved
+狩猟場はここから右（→）と書いてある…	사냥터는 여기서 오른쪽(→)이라고 쓰여 있다…	看板	sign	stage sign
+お？石炭か？\nまぁ、燃料はいくらあっても困らんからな。ありがとよ。	오? 석탄인가?\n뭐, 연료는 아무리 있어도 곤란할 일은 없으니까. 고맙다.	タガン	gift	gift response
+おぉっ！これは見事な金剛砥石じゃないか！\nいい目を持ってるな！こいつで研げば刃物の切れ味も段違いだ！	오오! 이거 훌륭한 금강 숫돌 아니냐!\n눈썰미가 좋구나! 이걸로 갈면 칼날의 예리함도 차원이 다르겠어!	タガン	gift	gift response
+なっ……！？こ、これは「神代の真鉄」！？\n国宝級の素材だぞ！？本気でこれを譲ってくれるのか！？\nあ、ありがとう！！家宝にするぞ！！	뭐……!? 이, 이건 "신대의 진철"이잖아!?\n국보급 소재라고!? 정말 이걸 넘겨주겠다는 거냐!?\n고, 고맙다!! 가보로 삼으마!!	タガン	gift	gift response; name preserved
+獣脂か？気が利くな。\nブーツや弓の手入れに丁度欲しかったんだ。助かるよ。	짐승 기름인가? 센스 있네.\n부츠나 활을 손질하는 데 마침 필요했거든. 도움이 됐어.	アルバルト	gift	gift response
+こ、これは疾風鳥の尾羽か！？\nすげぇ…これを使えば矢の射程が倍は伸びるぞ！\nいいのか？ありがとうな！	이, 이건 질풍조의 꼬리깃인가!?\n대단한데… 이걸 쓰면 화살 사거리가 두 배는 늘 거야!\n정말 괜찮냐? 고맙다!	アルバルト	gift	gift response
+お前…これは「千年樹の心材」じゃないか！？\n伝説の弓素材だぞ…震えが止まらねぇよ…。\nこんな凄いもの、本当にいいのか？感謝してもしきれねぇ！	너… 이건 "천년수의 심재"잖아!?\n전설의 활 소재라고… 떨림이 멈추질 않네….\n이렇게 대단한 걸 정말 받아도 돼? 고마워도 다 못 갚겠다!	アルバルト	gift	gift response; name preserved
+…綺麗な綿毛だ。\n生まれたばかりの子たちのベッドに丁度いい。\nありがとう…あの子たちも喜ぶだろう。	…예쁜 솜털이네.\n갓 태어난 아이들의 침대에 딱 좋겠어.\n고마워… 그 아이들도 기뻐할 거야.	ソディオ	gift	gift response
+…！琥珀の蜜蝋か。\nこれがあれば乾燥しがちな子たちの肌を守ってやれる。\n助かる、ありがとう。	…! 호박 밀랍이구나.\n이게 있으면 건조해지기 쉬운 아이들의 피부를 지켜 줄 수 있어.\n도움이 되겠어, 고마워.	ソディオ	gift	gift response
+……これは、聖樹の完熟果実か…！？\nどんなに弱った子でも元気になれる奇跡の果実だ。\n感謝する…！これで救える命がある。	……이건 성수의 완숙 과실인가…!?\n아무리 약해진 아이라도 기운을 되찾게 해 주는 기적의 열매야.\n고마워…! 이걸로 구할 수 있는 생명이 있어.	ソディオ	gift	gift response
+（渡せるものがないようだ…）	(건넬 수 있는 물건이 없는 것 같다…)	システム	gift	system message
+KILL数表示	KILL 수 표시		UI/options	kill count display label

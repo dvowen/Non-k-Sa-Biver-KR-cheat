@@ -7,6 +7,20 @@
     "note": "adult event"
   },
   {
+    "source": "……ふぅ。こうして天井を見上げると、妙に落ち着かねぇな。[wait:0.5]……おい、突っ立ってないでこっち来いよ。……お前の気が済むまで、好きにしろ。",
+    "korean": "……후우. 이렇게 천장을 올려다보고 있으니 묘하게 진정이 안 되네.[wait:0.5] ……야, 멀뚱히 서 있지 말고 이리 와. ……네 마음이 풀릴 때까지, 하고 싶은 대로 해.",
+    "speaker": "アルバルト",
+    "context": "max event",
+    "note": "adult event; token preserved"
+  },
+  {
+    "source": "お前…これは「千年樹の心材」じゃないか！？\\n伝説の弓素材だぞ…震えが止まらねぇよ…。\\nこんな凄いもの、本当にいいのか？感謝してもしきれねぇ！",
+    "korean": "너… 이건 \"천년수의 심재\"잖아!?\\n전설의 활 소재라고… 떨림이 멈추질 않네….\\n이렇게 대단한 걸 정말 받아도 돼? 고마워도 다 못 갚겠다!",
+    "speaker": "アルバルト",
+    "context": "gift",
+    "note": "gift response; name preserved"
+  },
+  {
     "source": "前にうっかり服のまま洗おうとしたら、一瞬でボロボロにされて参ったよ。\\n……まあ、今はこうして、お互い気兼ねなくやれるからいいけどさ。",
     "korean": "전에 깜빡하고 옷을 입은 채 씻기려 했다가 순식간에 너덜너덜해져서 곤란했어.\\n...뭐, 지금은 이렇게 서로 편하게 할 수 있으니 괜찮지만.",
     "speaker": "ソディオ",
@@ -19,6 +33,13 @@
     "speaker": "タガン",
     "context": "dialogue",
     "note": "affinity 400 night"
+  },
+  {
+    "source": "なっ……！？こ、これは「神代の真鉄」！？\\n国宝級の素材だぞ！？本気でこれを譲ってくれるのか！？\\nあ、ありがとう！！家宝にするぞ！！",
+    "korean": "뭐……!? 이, 이건 \"신대의 진철\"이잖아!?\\n국보급 소재라고!? 정말 이걸 넘겨주겠다는 거냐!?\\n고, 고맙다!! 가보로 삼으마!!",
+    "speaker": "タガン",
+    "context": "gift",
+    "note": "gift response; name preserved"
   },
   {
     "source": "だがよ、不思議なもんだな。次は何を言われるのか、どこまで俺を弄ぼうとするのか……それを期待してる自分がいることに気づいちまったんだ。",
@@ -56,11 +77,25 @@
     "note": "adult talk"
   },
   {
+    "source": "◆ サバイバルモード記録 ◆\\n自己ベスト: {survivalHighScore} pt\\n\\n（さらに記録を伸ばそう！）",
+    "korean": "◆ 서바이벌 모드 기록 ◆\\n개인 최고: {survivalHighScore} pt\\n\\n(기록을 더 늘려 보자!)",
+    "speaker": "システム",
+    "context": "status",
+    "note": "survival record; placeholder preserved"
+  },
+  {
     "source": "……ぐ、ぅ……ッ！ ……あ、……はぁ……ッ！！ ……ッは、……今の、は……。\\n……お前、……わざと、やってやがるな……っ",
     "korean": "……그, 윽……! ……아, ……하아……!! ……하, ……방금 건…….\\n……너, ……일부러 그러는 거지……",
     "speaker": "タガン",
     "context": "scenario",
     "note": "adult event"
+  },
+  {
+    "source": "……これは、聖樹の完熟果実か…！？\\nどんなに弱った子でも元気になれる奇跡の果実だ。\\n感謝する…！これで救える命がある。",
+    "korean": "……이건 성수의 완숙 과실인가…!?\\n아무리 약해진 아이라도 기운을 되찾게 해 주는 기적의 열매야.\\n고마워…! 이걸로 구할 수 있는 생명이 있어.",
+    "speaker": "ソディオ",
+    "context": "gift",
+    "note": "gift response"
   },
   {
     "source": "……不思議だな。……男の、ものなのに……。お前が中にいると思うと……なんだか、すごく……満たされてる感じがするんだ……。",
@@ -140,6 +175,13 @@
     "note": "embarrassing story"
   },
   {
+    "source": "……はは、お前の指、意外と大胆なんだな。……砂漠での一件もそうだが……お前に触られると、なんだか調子が狂うぜ。",
+    "korean": "……하하, 네 손가락, 의외로 대담하네. ……사막에서 있었던 일도 그렇고…… 네가 만지면 어쩐지 페이스가 흐트러진다.",
+    "speaker": "アルバルト",
+    "context": "max event",
+    "note": "adult event"
+  },
+  {
     "source": "おっ、もしかして何か頼みたいことでもあるのか？[wait:0.5]いいぜ！ お前の頼みなら何でも聞いてやる！",
     "korean": "오, 혹시 부탁할 거라도 있냐?[wait:0.5] 좋아! 네 부탁이라면 뭐든 들어주마!",
     "speaker": "アルバルト",
@@ -168,6 +210,20 @@
     "note": "adult event after"
   },
   {
+    "source": "試練の森（サバイバルモード）へ向かいますか？\\n（※入場時、一時的に回復アイテム等が使用不可になります）",
+    "korean": "시련의 숲(서바이벌 모드)으로 향할까요?\\n(※ 입장 시 회복 아이템 등을 일시적으로 사용할 수 없습니다)",
+    "speaker": "システム",
+    "context": "prompt",
+    "note": "survival mode prompt; token preserved"
+  },
+  {
+    "source": "こ、これは疾風鳥の尾羽か！？\\nすげぇ…これを使えば矢の射程が倍は伸びるぞ！\\nいいのか？ありがとうな！",
+    "korean": "이, 이건 질풍조의 꼬리깃인가!?\\n대단한데… 이걸 쓰면 화살 사거리가 두 배는 늘 거야!\\n정말 괜찮냐? 고맙다!",
+    "speaker": "アルバルト",
+    "context": "gift",
+    "note": "gift response"
+  },
+  {
     "source": "……お前の手、あったけぇな。……心臓の音がうるさくて、まいっちまう。……お前にも、響いてるか？ これ。",
     "korean": "……네 손, 따뜻하네. ……심장 소리가 시끄러워서 미치겠다. ……너한테도 들리냐, 이거.",
     "speaker": "アルバルト",
@@ -180,6 +236,20 @@
     "speaker": "タガン",
     "context": "scenario",
     "note": "adult talk"
+  },
+  {
+    "source": "おぉっ！これは見事な金剛砥石じゃないか！\\nいい目を持ってるな！こいつで研げば刃物の切れ味も段違いだ！",
+    "korean": "오오! 이거 훌륭한 금강 숫돌 아니냐!\\n눈썰미가 좋구나! 이걸로 갈면 칼날의 예리함도 차원이 다르겠어!",
+    "speaker": "タガン",
+    "context": "gift",
+    "note": "gift response"
+  },
+  {
+    "source": "…綺麗な綿毛だ。\\n生まれたばかりの子たちのベッドに丁度いい。\\nありがとう…あの子たちも喜ぶだろう。",
+    "korean": "…예쁜 솜털이네.\\n갓 태어난 아이들의 침대에 딱 좋겠어.\\n고마워… 그 아이들도 기뻐할 거야.",
+    "speaker": "ソディオ",
+    "context": "gift",
+    "note": "gift response"
   },
   {
     "source": "……笑うなよ。俺だって、必死なんだ。……お前の目に、俺はどう映ってる？ ……情けねぇ顔してねぇか？",
@@ -217,6 +287,20 @@
     "note": "adult event"
   },
   {
+    "source": "！？！？　なっ！？おいおい！くすぐってぇぞ！？そんなに顔動かしたら俺のケツ毛が絡まっちまうぞ(笑)",
+    "korean": "!?!? 뭐!? 어이 어이! 간지럽잖아!? 그렇게 얼굴을 움직이면 내 엉덩이털이 엉켜 버린다고. 하하.",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "adult event comedic line"
+  },
+  {
+    "source": "……くそ、……っ、お前のチンポが、……っ, どこに触れてんのか……、……全部、分かりやがる……ッ。",
+    "korean": "……젠장, ……윽, 네 자지가, ……어디에 닿는지…… ……전부, 느껴지잖아……!",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "adult event"
+  },
+  {
     "source": "俺たち狩人は茂みを移動しながら迎え撃つのが基本だ\\n茂みに入ると敵の弱点を狙いやすくなるからな！",
     "korean": "우리 사냥꾼은 덤불을 타고 움직이며 맞받아치는 게 기본이다.\\n덤불에 들어가면 적의 약점을 노리기 쉬워지거든!",
     "speaker": "アルバルト",
@@ -236,6 +320,34 @@
     "speaker": "タガン",
     "context": "dialogue",
     "note": "max affinity start"
+  },
+  {
+    "source": "普通の奴なら言わねぇような突飛なことを平気で頼んできたり、かと思えば満足してサッと引いたり……。",
+    "korean": "보통 녀석이면 입 밖에도 안 낼 엉뚱한 부탁을 태연히 해 오다가도, 만족하면 또 휙 물러나고……",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "affinity reflection"
+  },
+  {
+    "source": "……ッ、はぁ……ッ！\\n ……あぁ、くそ……ッ！ ……頭の中が、……真っ白に, なりやがる……！",
+    "korean": "……읏, 하아……!\\n ……아아, 젠장……! ……머릿속이, ……새하얘져 버리잖아……!",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "adult event"
+  },
+  {
+    "source": "[wait:0.5]……お前、そんなに申し訳なさそうな顔すんなって。……ちょっと、驚いただけだ。",
+    "korean": "[wait:0.5]……너, 그렇게 미안한 얼굴 하지 말라니까. ……조금 놀랐을 뿐이야.",
+    "speaker": "アルバルト",
+    "context": "max event",
+    "note": "adult event; token preserved"
+  },
+  {
+    "source": "…！琥珀の蜜蝋か。\\nこれがあれば乾燥しがちな子たちの肌を守ってやれる。\\n助かる、ありがとう。",
+    "korean": "…! 호박 밀랍이구나.\\n이게 있으면 건조해지기 쉬운 아이들의 피부를 지켜 줄 수 있어.\\n도움이 되겠어, 고마워.",
+    "speaker": "ソディオ",
+    "context": "gift",
+    "note": "gift response"
   },
   {
     "source": "性欲持て余すときには、どっかに俺の本気突きに\\n耐えられる奴がいないもんかと思うときはあるな…",
@@ -397,6 +509,20 @@
     "speaker": "タガン",
     "context": "scenario",
     "note": "affinity 200"
+  },
+  {
+    "source": "まぁ、世の中にはお前みたいな、他人とは一風変わったこだわりを持ってる奴もいるんだな",
+    "korean": "뭐, 세상에는 너처럼 남들과는 좀 다른 집착을 가진 녀석도 있는 법이구나.",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "affinity reflection"
+  },
+  {
+    "source": "[se:se_tentacle2]あっ！？え！？\\n宝珠じゃない！？なんだこれ！？",
+    "korean": "[se:se_tentacle2]앗!? 어!?\\n보주가 아니잖아!? 이게 뭐야!?",
+    "speaker": "アルバルト",
+    "context": "event",
+    "note": "blue orb event; token preserved"
   },
   {
     "source": "ただ、俺は男とは初めてだから何していいか分からないぞ？ 俺は何をすればいいんだ？",
@@ -644,6 +770,13 @@
     "note": "adult event after"
   },
   {
+    "source": "獣脂か？気が利くな。\\nブーツや弓の手入れに丁度欲しかったんだ。助かるよ。",
+    "korean": "짐승 기름인가? 센스 있네.\\n부츠나 활을 손질하는 데 마침 필요했거든. 도움이 됐어.",
+    "speaker": "アルバルト",
+    "context": "gift",
+    "note": "gift response"
+  },
+  {
     "source": "魔法を帯びた巨樹の最も硬い中心部。アルバルトへのプレゼントに使えそうだ。",
     "korean": "마법을 머금은 거목의 가장 단단한 중심부. 알베르트에게 선물할 수 있을 것 같다.",
     "speaker": "",
@@ -677,6 +810,20 @@
     "speaker": "タガン",
     "context": "scenario",
     "note": "adult talk"
+  },
+  {
+    "source": "……で、そろそろいい加減にして欲しいって時に、たまたま総隊副長が来てよ。",
+    "korean": "……그래서 이제 슬슬 그만 좀 했으면 싶던 참에, 마침 총대 부단장이 온 거야.",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "adult talk continuation"
+  },
+  {
+    "source": "[wait:0.5]……俺の中、お前の熱いので、いっぱいにしてくれ……。",
+    "korean": "[wait:0.5]……내 안을 네 뜨거운 걸로 가득 채워 줘……",
+    "speaker": "アルバルト",
+    "context": "max event",
+    "note": "adult event; token preserved"
   },
   {
     "source": "あー。いい、いい、分かってる！助けてもらったのには変わりはないからな！",
@@ -782,6 +929,13 @@
     "speaker": "",
     "context": "item/description",
     "note": ""
+  },
+  {
+    "source": "お？石炭か？\\nまぁ、燃料はいくらあっても困らんからな。ありがとよ。",
+    "korean": "오? 석탄인가?\\n뭐, 연료는 아무리 있어도 곤란할 일은 없으니까. 고맙다.",
+    "speaker": "タガン",
+    "context": "gift",
+    "note": "gift response"
   },
   {
     "source": "所持している分だけ弓矢やタレットの威力が強化される。（パッシブ効果）",
@@ -1204,6 +1358,13 @@
     "note": "adult event"
   },
   {
+    "source": "っ……！[wait:0.5]あ……おい、そこは……っ。",
+    "korean": "읏……![wait:0.5] 아…… 야, 거기는……",
+    "speaker": "アルバルト",
+    "context": "max event",
+    "note": "adult event; token preserved"
+  },
+  {
     "source": "深淵より現れた黒き竜。5方向へ広がる強力な火炎を放つ。",
     "korean": "심연에서 나타난 검은 용. 5방향으로 퍼지는 강력한 화염을 뿜는다.",
     "speaker": "",
@@ -1251,6 +1412,20 @@
     "speaker": "タガン",
     "context": "scenario",
     "note": "adult event"
+  },
+  {
+    "source": "……ッ、！？[wait:0.5]……あ、ぐ……ッ！！",
+    "korean": "……읏, !?[wait:0.5] ……아, 윽……!!",
+    "speaker": "アルバルト",
+    "context": "max event",
+    "note": "adult event; token preserved"
+  },
+  {
+    "source": "おっ、おい！すまん！\\n[wait]助けてくれ~！！",
+    "korean": "어, 어이! 미안하다!\\n[wait]도와줘~!!",
+    "speaker": "アルバルト",
+    "context": "event",
+    "note": "blue orb event; token preserved"
   },
   {
     "source": "入場時、一時的に回復アイテム等が使用不可になります）",
@@ -1351,6 +1526,20 @@
     "note": "affinity 400 night"
   },
   {
+    "source": "（主人公がアルバルトの身体に触れ、愛撫が始まる）",
+    "korean": "(주인공이 알베르트의 몸에 손을 대고, 애무가 시작된다)",
+    "speaker": "",
+    "context": "adult narration",
+    "note": "adult event"
+  },
+  {
+    "source": "……ふぅ、……ふぅ……。……大丈夫だ、止まるな。",
+    "korean": "……후우, ……후우……. ……괜찮아, 멈추지 마.",
+    "speaker": "アルバルト",
+    "context": "max event",
+    "note": "adult event"
+  },
+  {
     "source": "空を飛ぶ小さな竜。火球を吐き、残り火で敵を焼く。",
     "korean": "하늘을 나는 작은 용. 화구를 뿜고 잔불로 적을 태운다.",
     "speaker": "",
@@ -1428,6 +1617,20 @@
     "note": "adult event"
   },
   {
+    "source": "あっ！ああああっっ！があぁあああぁぁぁっっ！！",
+    "korean": "앗! 아아아아앗! 가아아아아아아앗!!",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "adult event exclamation"
+  },
+  {
+    "source": "[se:se_wind]ふっ！？服が溶ける！？",
+    "korean": "[se:se_wind]으!? 옷이 녹는다고!?",
+    "speaker": "アルバルト",
+    "context": "event",
+    "note": "blue orb event; token preserved"
+  },
+  {
     "source": "大丈夫か？最近の獲物は数が異常に多いからな…",
     "korean": "괜찮냐? 요즘 사냥감 수가 이상할 정도로 많으니까…",
     "speaker": "アルバルト",
@@ -1482,6 +1685,13 @@
     "speaker": "タガン",
     "context": "dialogue",
     "note": "adult event"
+  },
+  {
+    "source": "（アルバルトの大胸筋に触れながら耳元で囁く）",
+    "korean": "(알베르트의 대흉근을 만지며 귓가에 속삭인다)",
+    "speaker": "PLAYER",
+    "context": "choice",
+    "note": "adult event narration choice"
   },
   {
     "source": "あなたは成人済みかつ高校生ではありませんか？",
@@ -1701,6 +1911,20 @@
     "note": "affinity 400 night"
   },
   {
+    "source": "（彼の腰を引き寄せ、優しく突き上げる）",
+    "korean": "(그의 허리를 끌어당겨 부드럽게 밀어 올린다)",
+    "speaker": "PLAYER",
+    "context": "choice",
+    "note": "adult event narration choice"
+  },
+  {
+    "source": "狩猟場はここから右（→）と書いてある…",
+    "korean": "사냥터는 여기서 오른쪽(→)이라고 쓰여 있다…",
+    "speaker": "看板",
+    "context": "sign",
+    "note": "stage sign"
+  },
+  {
     "source": "⚔️ サバイバル (Survival)",
     "korean": "⚔️ 서바이벌 (Survival)",
     "speaker": "",
@@ -1834,6 +2058,20 @@
     "note": "affinity 300 start"
   },
   {
+    "source": "（アルバルトに近づき、肌に触れる）",
+    "korean": "(알베르트에게 다가가 피부에 닿는다)",
+    "speaker": "PLAYER",
+    "context": "choice",
+    "note": "adult event narration choice"
+  },
+  {
+    "source": "……ほら、もっと……奥まで来いよ。",
+    "korean": "……자, 더…… 깊이 와.",
+    "speaker": "アルバルト",
+    "context": "max event",
+    "note": "adult event"
+  },
+  {
     "source": "素早い動きが得意だが、打たれ弱い。",
     "korean": "재빠른 움직임이 장점이지만 맷집은 약하다.",
     "speaker": "",
@@ -1890,6 +2128,13 @@
     "note": "adult event"
   },
   {
+    "source": "[se:se_wind]えっ！？",
+    "korean": "[se:se_wind]뭐!?",
+    "speaker": "アルバルト",
+    "context": "event",
+    "note": "blue orb event; token preserved"
+  },
+  {
     "source": "発掘ポイント出現判定 (設定確率",
     "korean": "발굴 지점 출현 판정 (설정 확률",
     "speaker": "",
@@ -1937,6 +2182,13 @@
     "speaker": "タガン",
     "context": "dialogue",
     "note": "max affinity route"
+  },
+  {
+    "source": "よぉ、気を付けて行ってこいよ！",
+    "korean": "여어, 조심해서 다녀와라!",
+    "speaker": "アルバルト",
+    "context": "dialogue",
+    "note": "stage departure"
   },
   {
     "source": "🏜️ 砂漠 (Desert)",
@@ -2042,6 +2294,13 @@
     "speaker": "タガン",
     "context": "scenario",
     "note": "adult event"
+  },
+  {
+    "source": "（渡せるものがないようだ…）",
+    "korean": "(건넬 수 있는 물건이 없는 것 같다…)",
+    "speaker": "システム",
+    "context": "gift",
+    "note": "system message"
   },
   {
     "source": "画面表示倍率 (Scale)",
@@ -2625,6 +2884,13 @@
     "note": ""
   },
   {
+    "source": "最高の恩返しだったよ",
+    "korean": "최고의 보답이었어",
+    "speaker": "PLAYER",
+    "context": "choice",
+    "note": "adult event choice"
+  },
+  {
     "source": "アルバルト (狩人)",
     "korean": "알베르트 (사냥꾼)",
     "speaker": "",
@@ -3052,6 +3318,13 @@
     "note": ""
   },
   {
+    "source": "この場所について",
+    "korean": "이 장소에 대해",
+    "speaker": "PLAYER",
+    "context": "choice",
+    "note": "location talk"
+  },
+  {
     "source": "タガン (商人)",
     "korean": "타간 (상인)",
     "speaker": "",
@@ -3346,6 +3619,20 @@
     "note": ""
   },
   {
+    "source": "チンポの大きさ",
+    "korean": "자지 크기",
+    "speaker": "PLAYER",
+    "context": "choice",
+    "note": "adult profile question"
+  },
+  {
+    "source": "KILL数表示",
+    "korean": "KILL 수 표시",
+    "speaker": "",
+    "context": "UI/options",
+    "note": "kill count display label"
+  },
+  {
     "source": "金貨+1000",
     "korean": "금화+1000",
     "speaker": "",
@@ -3547,6 +3834,20 @@
     "speaker": "",
     "context": "item/medal",
     "note": ""
+  },
+  {
+    "source": "灼熱の砂漠へ",
+    "korean": "작열하는 사막으로",
+    "speaker": "PLAYER",
+    "context": "stage choice",
+    "note": "stage destination"
+  },
+  {
+    "source": "古代の遺跡へ",
+    "korean": "고대 유적으로",
+    "speaker": "PLAYER",
+    "context": "stage choice",
+    "note": "stage destination"
   },
   {
     "source": "SYSTEM",
@@ -3829,6 +4130,20 @@
     "note": ""
   },
   {
+    "source": "やめないで",
+    "korean": "그만두지 마",
+    "speaker": "PLAYER",
+    "context": "choice",
+    "note": "adult choice"
+  },
+  {
+    "source": "記録を見る",
+    "korean": "기록 보기",
+    "speaker": "PLAYER",
+    "context": "choice",
+    "note": "survival mode"
+  },
+  {
     "source": "はじめから",
     "korean": "처음부터",
     "speaker": "",
@@ -4107,6 +4422,20 @@
     "speaker": "タガン",
     "context": "choice",
     "note": "adult event after"
+  },
+  {
+    "source": "やめよう",
+    "korean": "그만하자",
+    "speaker": "PLAYER",
+    "context": "choice",
+    "note": "adult choice"
+  },
+  {
+    "source": "挑戦する",
+    "korean": "도전한다",
+    "speaker": "PLAYER",
+    "context": "choice",
+    "note": "survival mode"
   },
   {
     "source": "システム",
@@ -4478,6 +4807,20 @@
     "speaker": "",
     "context": "UI/choice",
     "note": ""
+  },
+  {
+    "source": "年齢",
+    "korean": "나이",
+    "speaker": "PLAYER",
+    "context": "choice",
+    "note": "profile question"
+  },
+  {
+    "source": "家族",
+    "korean": "가족",
+    "speaker": "PLAYER",
+    "context": "choice",
+    "note": "profile question"
   },
   {
     "source": "看板",
