@@ -41,3 +41,34 @@ export function toJsEscapedText(value) {
 export function jsStringLiteralPattern(source) {
   return new RegExp(`"${escapeRegExp(toJsEscapedText(source))}"`, "g");
 }
+
+export function mergeTranslationRows(rows) {
+  const merged = new Map();
+  for (const row of rows) {
+    if (!row.source || !row.korean) continue;
+
+    validateTokenPreservation(row.source, row.korean);
+
+    const previous = merged.get(row.source);
+    if (previous && previous.korean !== row.korean) {
+      throw new Error(`Conflicting translation for source: ${row.source}`);
+    }
+
+    merged.set(row.source, {
+      source: row.source,
+      korean: row.korean,
+      speaker: row.speaker ?? "",
+      context: row.context ?? "",
+      note: row.note ?? "",
+    });
+  }
+  return [...merged.values()].sort((a, b) => b.source.length - a.source.length);
+}
+
+export function replaceJsStringLiterals(input, translations) {
+  let output = input;
+  for (const row of translations) {
+    output = output.replace(jsStringLiteralPattern(row.source), `"${toJsEscapedText(row.korean)}"`);
+  }
+  return output;
+}
