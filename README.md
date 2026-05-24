@@ -55,6 +55,17 @@ node scripts/extract-strings.mjs
 node scripts/download-assets.mjs
 ```
 
+## Translation Workflow
+
+Local planning notes live under `docs/`, which is intentionally gitignored.
+Translation tables live under `translate/`.
+After editing translation TSV files, run:
+
+```bash
+node scripts/merge-translations.mjs
+node scripts/apply-translations.mjs
+```
+
 ## Asset Download Status
 
 Last download pass:
