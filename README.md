@@ -1,95 +1,19 @@
-# Non-k Sa-BIVER Next.js Capture
+# Non-k Sa-BIVER KR Cheat
 
-Source URL: https://funa-funa.sakura.ne.jp/202604testtes004v6/
+`Non-k Sa-BIVER KR Cheat`는 **Non-k Sa-BIVER v0.6의 비공식 한국어 번역 및 로컬라이즈판**에 테스트용 관리자 도구를 포함한 버전입니다.
 
-Captured on: 2026-05-25 KST
+게임 내 일본어 텍스트를 한국어로 번역하고, 한국어 플레이 환경에 맞춰 일부 표현과 UI 문구를 다듬었습니다.
 
-## Contents
+## 플레이
 
-- `raw/index.html` - original HTML response.
-- `raw/chunks/` - Next.js/Turbopack JavaScript chunks referenced by the page and dynamically loaded by the page component.
-- `raw/css/` - CSS chunk referenced by the page.
-- `raw/favicon.ico` - favicon from the deployed page.
-- `extracted/discovered-chunks.txt` - JS/CSS chunk paths discovered from the HTML and runtime chunk.
-- `extracted/asset-list.txt` - asset URLs discovered from HTML/CSS/JS.
-- `extracted/asset-manifest.json` - download result for every discovered asset.
-- `extracted/missing-assets.txt` - asset references that the upstream server returned as missing.
-- `extracted/file-summary.tsv` - file size summary for downloaded assets.
-- `extracted/site-file-summary.tsv` - file size summary for the runnable static mirror.
-- `extracted/japanese-strings.tsv` - high-signal Japanese text snippets with an empty `korean` column for translation.
-- `extracted/japanese-strings.md` - Markdown view of the same Japanese snippets.
-- `extracted/japanese-strings.json` - JSON version of the Japanese snippets.
-- `extracted/translation-candidates.tsv` - broader string-literal extraction from JS/HTML/CSS. This is noisy because it includes library/runtime strings.
-- `extracted/all-strings.json` and `extracted/unique-strings.json` - raw extraction data for deeper inspection.
-- `scripts/extract-japanese.mjs` - regenerates the Japanese translation table.
-- `scripts/extract-strings.mjs` - regenerates broad string-literal extraction files.
-- `scripts/download-assets.mjs` - discovers and downloads static assets referenced by the built files.
-- `site/` - runnable static mirror layout.
-- `serve-local.mjs` - local static server. Missing assets are fetched from the original site and cached under `site/`.
+https://dvowen.github.io/Non-k-Sa-Biver-KR-cheat/
 
-## Run Locally
+## 안내
 
-```bash
-cd /root/workspace/Non-k-Sa-Biver
-node serve-local.mjs
-```
-
-Then open:
-
-```text
-http://127.0.0.1:4173/202604testtes004v6/
-```
-
-## Notes
-
-- This is a built Next.js App Router deployment, not the original source tree.
-- The page shell points at `b6d71b0eb4b19136.js`, which then loads additional game chunks.
-- No usable `sourceMappingURL` source maps were found in the downloaded files.
-- For translation work, start with `extracted/japanese-strings.tsv`; use `extracted/translation-candidates.tsv` only if you need non-Japanese UI strings too.
-
-## Regenerate Extracts
-
-```bash
-node scripts/extract-japanese.mjs
-node scripts/extract-strings.mjs
-node scripts/download-assets.mjs
-```
-
-## Translation Workflow
-
-Local planning notes live under `docs/`, which is intentionally gitignored.
-Translation tables live under `translate/`.
-After editing translation TSV files, run:
-
-```bash
-node scripts/merge-translations.mjs
-node scripts/apply-translations.mjs
-```
-
-## GitHub Pages Build
-
-For a project page deployed from this repository, build `dist/` with:
-
-```bash
-node scripts/build-github-pages.mjs
-```
-
-The build copies `site/` into `dist/`, rewrites `/202604testtes004v6/...` asset paths to
-`/Non-k-Sa-Biver-KR/202604testtes004v6/...`, and writes `dist/.nojekyll` so GitHub Pages serves
-`_next/` assets correctly. The Pages workflow deploys this `dist/` directory on pushes to `main`.
-
-If the repository name changes, override the project base path:
-
-```bash
-GITHUB_PAGES_BASE=/your-repo-name node scripts/build-github-pages.mjs
-```
-
-## Asset Download Status
-
-Last download pass:
-
-- Discovered assets: 226
-- Present locally: 221
-- Upstream 404 references: 5
-
-The missing upstream references are listed in `extracted/missing-assets.txt`. They were also 404 on the original server during verification.
+- 본 프로젝트는 원작 `Non-k Sa-BIVER v0.6`을 기반으로 한 한국어 번역판입니다.
+- 번역은 직역보다 한국어 플레이 경험을 우선해 일부 문장을 자연스럽게 의역했습니다.
+- 이 버전에는 테스트 목적의 숨겨진 관리자 도구가 포함되어 있습니다.
+- 일반 공유용 플레이는 `Non-k Sa-BIVER KR` 기본판을 권장합니다.
+- 이 게임에는 성인용 콘텐츠와 BL 요소가 포함되어 있습니다.
+- 본 저장소는 한국어 번역 및 실행 환경 정리를 위한 비공식 프로젝트입니다.
+- 원작의 권리는 원작자에게 있습니다.

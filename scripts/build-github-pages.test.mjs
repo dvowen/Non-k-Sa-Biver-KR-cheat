@@ -28,10 +28,17 @@ test("rewriteGithubPagesPaths prefixes absolute local app paths with repo base",
   );
 });
 
-test("rewriteGithubPagesPaths defaults to the KR repository base path", () => {
+test("rewriteGithubPagesPaths defaults to the KR cheat repository base path", () => {
   assert.equal(
     rewriteGithubPagesPaths('fetch("/202604testtes004v6/debug-items.json")'),
-    'fetch("/Non-k-Sa-Biver-KR/202604testtes004v6/debug-items.json")',
+    'fetch("/Non-k-Sa-Biver-KR-cheat/202604testtes004v6/debug-items.json")',
+  );
+});
+
+test("rewriteGithubPagesPaths does not rewrite external source URLs", () => {
+  assert.equal(
+    rewriteGithubPagesPaths('href="https://example.com/202604testtes004v6/"'),
+    'href="https://example.com/202604testtes004v6/"',
   );
 });
 

@@ -5,7 +5,7 @@ import { pathToFileURL } from "node:url";
 const SOURCE_DIR = path.resolve("site");
 const DIST_DIR = path.resolve("dist");
 const LOCAL_BASE_PATH = "/202604testtes004v6";
-const DEFAULT_GITHUB_PAGES_BASE_PATH = "/Non-k-Sa-Biver-KR";
+const DEFAULT_GITHUB_PAGES_BASE_PATH = "/Non-k-Sa-Biver-KR-cheat";
 const TEXT_EXTENSIONS = new Set([
   ".css",
   ".html",
@@ -24,6 +24,10 @@ function normalizePathPrefix(value) {
   return trimmed.startsWith("/") ? trimmed : `/${trimmed}`;
 }
 
+function escapeRegExp(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
 export function rewriteGithubPagesPaths(
   content,
   {
@@ -33,7 +37,8 @@ export function rewriteGithubPagesPaths(
 ) {
   const localBase = normalizePathPrefix(localBasePath);
   const pagesBase = normalizePathPrefix(githubPagesBasePath);
-  return content.split(localBase).join(`${pagesBase}${localBase}`);
+  const pattern = new RegExp(`(?<![.A-Za-z0-9_-])${escapeRegExp(localBase)}`, "g");
+  return content.replace(pattern, `${pagesBase}${localBase}`);
 }
 
 async function listFiles(dir) {

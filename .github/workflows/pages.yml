@@ -28,7 +28,7 @@ jobs:
 
       - name: Verify
         run: |
-          node --test scripts/translation-utils.test.mjs scripts/apply-translations.test.mjs scripts/debug-tools-utils.test.mjs scripts/generate-debug-items.test.mjs scripts/inject-debug-tools.test.mjs scripts/build-github-pages.test.mjs
+          node --test scripts/translation-utils.test.mjs scripts/apply-translations.test.mjs scripts/debug-tools-utils.test.mjs scripts/generate-debug-items.test.mjs scripts/inject-debug-tools.test.mjs scripts/build-github-pages.test.mjs scripts/cheat-build-policy.test.mjs
           node --check scripts/build-github-pages.mjs
 
       - name: Build
