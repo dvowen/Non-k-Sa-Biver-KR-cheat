@@ -8,3 +8,4 @@ dist/
 docs/
 .codex/agents/
 .worktrees/
+_workspace/
