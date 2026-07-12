@@ -70,6 +70,9 @@ test("v0.7 guide preserves unlock conditions and gives complete save instruction
 
 test("Arca Live guide uses the field-guide palette and sanitizer-safe inline HTML", async () => {
   const html = await fs.readFile(ARCA_GUIDE, "utf8");
+  const visibleText = html.replace(/<[^>]+>/g, "").replace(/\s+/g, "");
+  const encodedDeployUrl = Buffer.from(DEPLOY_URL).toString("base64");
+  const encodedSaveManagerUrl = Buffer.from(SAVE_MANAGER_URL).toString("base64");
   const detailsCount = [...html.matchAll(/<details\b/g)].length;
   const detailsCloseCount = [...html.matchAll(/<\/details>/g)].length;
   const summaryCount = [...html.matchAll(/<summary\b/g)].length;
@@ -83,8 +86,14 @@ test("Arca Live guide uses the field-guide palette and sanitizer-safe inline HTM
     assert.match(html, new RegExp(escapeRegExp(color), "i"));
   }
   assert.doesNotMatch(html, /<style\b|<script\b|<code\b|<button\b|class=|<!--/i);
+  assert.doesNotMatch(html, /<a\b[^>]*href=|https?:\/\//i);
   assert.doesNotMatch(html, /(?:cursor|position|z-index|overflow|opacity|filter|transform|animation|transition)\s*:/i);
   assert.doesNotMatch(html, /display\s*:\s*(?:flex|grid)/i);
+  assert.match(visibleText, new RegExp(escapeRegExp(encodedDeployUrl)));
+  assert.match(visibleText, new RegExp(escapeRegExp(encodedSaveManagerUrl)));
+  assert.match(visibleText, /신작가져왔음/);
+  assert.match(visibleText, /5분.*버티면/);
+  assert.match(visibleText, /즐겜/);
   for (const fact of requiredV07Facts) assert.match(html, new RegExp(escapeRegExp(fact)));
   for (const pattern of developerSlopPatterns) assert.doesNotMatch(html, pattern);
 });
