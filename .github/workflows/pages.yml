@@ -28,13 +28,14 @@ jobs:
 
       - name: Verify
         run: |
-          node --test scripts/translation-utils.test.mjs scripts/apply-translations.test.mjs scripts/build-github-pages.test.mjs scripts/public-build-policy.test.mjs
+          node --test scripts/*.test.mjs serve-local.test.mjs
           node --check scripts/build-github-pages.mjs
 
       - name: Build
         run: |
           node scripts/merge-translations.mjs
           node scripts/apply-translations.mjs
+          node scripts/audit-translations.mjs
           node scripts/build-github-pages.mjs
 
       - name: Upload artifact

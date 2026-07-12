@@ -18,5 +18,14 @@ test("public README is a concise Korean translation notice", async () => {
   const readme = await fs.readFile("README.md", "utf8");
 
   assert.match(readme, /비공식 한국어 번역/);
+  assert.match(readme, /v0\.7/);
+  assert.doesNotMatch(readme, /v0\.6/);
   assert.doesNotMatch(readme, /funa-funa|Source URL|Run Locally|로컬 실행|debug|cheat|치트/i);
+});
+
+test("Pages deployment runs the complete test and translation audit gates", async () => {
+  const workflow = await fs.readFile(".github/workflows/pages.yml", "utf8");
+
+  assert.match(workflow, /node --test scripts\/\*\.test\.mjs serve-local\.test\.mjs/);
+  assert.match(workflow, /node scripts\/audit-translations\.mjs/);
 });
