@@ -1,4 +1,6 @@
-export const BASE_PATH = "/202604testtes004v6";
+import { UPSTREAM_BASE_PATH } from "./version-config.mjs";
+
+export const BASE_PATH = UPSTREAM_BASE_PATH;
 
 const ASSET_EXTENSIONS = [
   "woff2",

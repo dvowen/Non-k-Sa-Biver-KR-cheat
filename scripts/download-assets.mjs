@@ -1,14 +1,17 @@
 import fs from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
 import { extractAssetPaths, pathToSiteRelative } from "./asset-utils.mjs";
+import {
+  RAW_DIR,
+  SITE_ROOT_DIR,
+  UPSTREAM_ORIGIN,
+} from "./version-config.mjs";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const root = path.resolve(__dirname, "..");
-const rawDir = path.join(root, "raw");
-const siteDir = path.join(root, "site");
+const root = path.resolve(RAW_DIR, "..");
+const rawDir = RAW_DIR;
+const siteDir = SITE_ROOT_DIR;
 const extractedDir = path.join(root, "extracted");
-const upstreamOrigin = "https://funa-funa.sakura.ne.jp";
+const upstreamOrigin = UPSTREAM_ORIGIN;
 const concurrency = Number(process.env.CONCURRENCY || 6);
 const retryCount = Number(process.env.RETRIES || 1);
 
