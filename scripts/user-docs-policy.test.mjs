@@ -68,7 +68,7 @@ test("v0.7 guide preserves unlock conditions and gives complete save instruction
   for (const pattern of developerSlopPatterns) assert.doesNotMatch(guide, pattern);
 });
 
-test("Arca Live guide uses the field-guide palette and sanitizer-safe inline HTML", async () => {
+test("Arca Live guide reads like a simple community post and uses sanitizer-safe inline HTML", async () => {
   const html = await fs.readFile(ARCA_GUIDE, "utf8");
   const visibleText = html.replace(/<[^>]+>/g, "").replace(/\s+/g, "");
   const encodedDeployUrl = Buffer.from(DEPLOY_URL).toString("base64");
@@ -81,20 +81,22 @@ test("Arca Live guide uses the field-guide palette and sanitizer-safe inline HTM
   assert.ok(detailsCount >= 4);
   assert.equal(detailsCount, detailsCloseCount);
   assert.equal(summaryCount, summaryCloseCount);
-  assert.match(html, /사냥꾼 야전수첩/);
-  for (const color of ["#17120f", "#211a15", "#e9dfd0", "#d8943b", "#718f4e"]) {
-    assert.match(html, new RegExp(escapeRegExp(color), "i"));
+  assert.match(html, />Non-K-Sa-Biver<\/h[1-6]>/i);
+  assert.doesNotMatch(html, /사냥꾼 야전\s*수첩|v0\.7 신규 패시브 무기/);
+  for (const weapon of requiredV07Facts.slice(4)) {
+    assert.doesNotMatch(html, new RegExp(escapeRegExp(weapon)));
   }
+  assert.doesNotMatch(html, /linear-gradient|box-shadow|letter-spacing/i);
   assert.doesNotMatch(html, /<style\b|<script\b|<code\b|<button\b|class=|<!--/i);
   assert.doesNotMatch(html, /<a\b[^>]*href=|https?:\/\//i);
   assert.doesNotMatch(html, /(?:cursor|position|z-index|overflow|opacity|filter|transform|animation|transition)\s*:/i);
   assert.doesNotMatch(html, /display\s*:\s*(?:flex|grid)/i);
   assert.match(visibleText, new RegExp(escapeRegExp(encodedDeployUrl)));
   assert.match(visibleText, new RegExp(escapeRegExp(encodedSaveManagerUrl)));
-  assert.match(visibleText, /신작가져왔음/);
+  assert.match(visibleText, /전에올렸던.*v0\.7.*다시손봤음/);
   assert.match(visibleText, /5분.*버티면/);
   assert.match(visibleText, /즐겜/);
-  for (const fact of requiredV07Facts) assert.match(html, new RegExp(escapeRegExp(fact)));
+  for (const fact of requiredV07Facts.slice(0, 4)) assert.match(html, new RegExp(escapeRegExp(fact)));
   for (const pattern of developerSlopPatterns) assert.doesNotMatch(html, pattern);
 });
 
