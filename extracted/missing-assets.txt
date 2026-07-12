@@ -1,5 +1,1 @@
-/202604testtes004v6/assets/A-01aaegao01.png	HTTP 404
-/202604testtes004v6/assets/A-01aanomal.png	HTTP 404
-/202604testtes004v6/assets/cg/test01.png	HTTP 404
-/202604testtes004v6/assets/icons/potion01.png	HTTP 404
-/202604testtes004v6/assets/ui/pattern.png	HTTP 404
+

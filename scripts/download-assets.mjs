@@ -1,6 +1,10 @@
 import fs from "node:fs";
 import path from "node:path";
-import { extractAssetPaths, pathToSiteRelative } from "./asset-utils.mjs";
+import {
+  extractAssetPaths,
+  isKnownUpstreamMissingAsset,
+  pathToSiteRelative,
+} from "./asset-utils.mjs";
 import {
   RAW_DIR,
   SITE_ROOT_DIR,
@@ -91,7 +95,9 @@ async function runPool(items, worker) {
   return results;
 }
 
-const assets = discoverAssets();
+const discoveredAssets = discoverAssets();
+const knownUpstreamMissing = discoveredAssets.filter((asset) => isKnownUpstreamMissingAsset(asset.path));
+const assets = discoveredAssets.filter((asset) => !isKnownUpstreamMissingAsset(asset.path));
 fs.mkdirSync(extractedDir, { recursive: true });
 fs.writeFileSync(path.join(extractedDir, "asset-list.txt"), assets.map((asset) => asset.path).join("\n") + "\n");
 
@@ -124,6 +130,7 @@ const manifest = {
   downloaded,
   cached,
   missing,
+  knownUpstreamMissing,
   assets: results,
 };
 
@@ -137,5 +144,6 @@ console.log(`assets=${results.length}`);
 console.log(`downloaded=${downloaded}`);
 console.log(`cached=${cached}`);
 console.log(`missing=${missing}`);
+console.log(`known_upstream_missing=${knownUpstreamMissing.length}`);
 
 if (missing > 0) process.exitCode = 1;

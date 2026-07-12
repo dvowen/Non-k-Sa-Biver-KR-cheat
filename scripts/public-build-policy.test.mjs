@@ -2,8 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { promises as fs } from "node:fs";
 import path from "node:path";
-
-const SITE_DIR = path.resolve("site/202604testtes004v6");
+import { SITE_DIR } from "./version-config.mjs";
 
 test("public KR site does not expose debug tools", async () => {
   const indexHtml = await fs.readFile(path.join(SITE_DIR, "index.html"), "utf8");
