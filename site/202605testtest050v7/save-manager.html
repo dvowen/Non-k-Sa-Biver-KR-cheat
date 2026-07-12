@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Non-k Sa-BIVER Save Manager</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #101114;
+        color: #f5f5f5;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        padding: 24px;
+        background: radial-gradient(circle at top, #1d2430 0, #101114 42%);
+      }
+
+      main {
+        width: min(960px, 100%);
+        margin: 0 auto;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 28px;
+      }
+
+      h2 {
+        margin: 28px 0 10px;
+        font-size: 18px;
+      }
+
+      p,
+      li {
+        color: #d8d8d8;
+        line-height: 1.6;
+      }
+
+      code,
+      textarea {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      }
+
+      textarea {
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 220px;
+        margin: 10px 0;
+        padding: 14px;
+        resize: vertical;
+        border: 1px solid #3f4652;
+        border-radius: 8px;
+        background: #151820;
+        color: #f5f5f5;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      input[type="file"],
+      input[type="text"] {
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 42px;
+        padding: 8px 10px;
+        border: 1px solid #3f4652;
+        border-radius: 8px;
+        background: #151820;
+        color: #f5f5f5;
+      }
+
+      button,
+      a.button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 42px;
+        padding: 0 16px;
+        border: 1px solid #515a6b;
+        border-radius: 8px;
+        background: #242a34;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: 700;
+      }
+
+      button.primary {
+        border-color: #2563eb;
+        background: #1d4ed8;
+      }
+
+      button.danger {
+        border-color: #b91c1c;
+        background: #991b1b;
+      }
+
+      .panel {
+        margin-top: 18px;
+        padding: 18px;
+        border: 1px solid #303846;
+        border-radius: 8px;
+        background: rgba(17, 24, 39, 0.74);
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .status {
+        min-height: 24px;
+        margin-top: 14px;
+        color: #fbbf24;
+      }
+
+      .ok {
+        color: #86efac;
+      }
+
+      .error {
+        color: #fca5a5;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>세이브 관리</h1>
+      <p>
+        이 페이지는 현재 브라우저의 <code>localStorage</code>에 저장된
+        <code>loot_and_link_save_v1</code> 세이브만 관리합니다.
+      </p>
+
+      <section class="panel">
+        <h2>현재 로컬 세이브</h2>
+        <p id="saveSummary">확인 중...</p>
+        <div class="actions">
+          <button id="exportButton" type="button">현재 로컬 세이브 내보내기</button>
+          <button class="danger" id="deleteButton" type="button">현재 로컬 세이브 삭제</button>
+          <a class="button" href="/202605testtest050v7/">게임으로 돌아가기</a>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>파일에서 불러오기</h2>
+        <input id="saveFile" type="file" accept="application/json,.json" />
+      </section>
+
+      <section class="panel">
+        <h2>붙여넣어서 불러오기</h2>
+        <textarea id="saveInput" spellcheck="false" placeholder="내보낸 세이브 JSON을 붙여넣으세요."></textarea>
+        <div class="actions">
+          <button class="primary" id="applyButton" type="button">로컬에 적용</button>
+        </div>
+      </section>
+
+      <div class="status" id="status"></div>
+    </main>
+
+    <script>
+      const SAVE_KEY = "loot_and_link_save_v1";
+      const statusEl = document.getElementById("status");
+      const saveInput = document.getElementById("saveInput");
+      const saveSummary = document.getElementById("saveSummary");
+
+      function validateSave(save) {
+        if (!save || typeof save !== "object") throw new Error("세이브 JSON이 아닙니다.");
+        if (save.version == null) throw new Error("version 필드가 없습니다.");
+        if (!save.player || typeof save.player !== "object") throw new Error("player 필드가 없습니다.");
+        if (!save.flags || typeof save.flags !== "object") throw new Error("flags 필드가 없습니다.");
+      }
+
+      function setStatus(message, className = "") {
+        statusEl.className = `status ${className}`;
+        statusEl.textContent = message;
+      }
+
+      function refreshSummary() {
+        const current = localStorage.getItem(SAVE_KEY);
+        if (!current) {
+          saveSummary.textContent = "현재 로컬 세이브가 없습니다.";
+          return;
+        }
+
+        try {
+          const save = JSON.parse(current);
+          const coins = save.player?.coins ?? 0;
+          const location = save.location?.type || "unknown";
+          saveSummary.textContent = `세이브 있음: 코인 ${Number(coins).toLocaleString("ko-KR")} / 위치 ${location}`;
+        } catch {
+          saveSummary.textContent = "현재 로컬 세이브가 있지만 JSON 파싱에 실패했습니다.";
+        }
+      }
+
+      function downloadText(filename, text) {
+        const blob = new Blob([text], { type: "application/json;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = filename;
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        URL.revokeObjectURL(url);
+      }
+
+      function unwrapSaveInput(text) {
+        const parsed = JSON.parse(text);
+        if (typeof parsed === "string") return JSON.parse(parsed);
+        if (parsed && typeof parsed === "object") {
+          if (typeof parsed.value === "string") return JSON.parse(parsed.value);
+          if (parsed.key === SAVE_KEY && parsed.value && typeof parsed.value === "object") return parsed.value;
+          return parsed;
+        }
+        throw new Error("세이브 JSON 형식을 인식하지 못했습니다.");
+      }
+
+      function applySaveFromText(text) {
+        const save = unwrapSaveInput(text.trim());
+        validateSave(save);
+
+        const current = localStorage.getItem(SAVE_KEY);
+        if (current) {
+          localStorage.setItem(`${SAVE_KEY}_backup_${Date.now()}`, current);
+        }
+
+        localStorage.setItem(SAVE_KEY, JSON.stringify(save));
+        refreshSummary();
+        setStatus("로컬 세이브에 적용했습니다. 게임으로 돌아가 이어하기를 선택하세요.", "ok");
+      }
+
+      document.getElementById("exportButton").addEventListener("click", () => {
+        const payload = {
+          exportedAt: new Date().toISOString(),
+          origin: location.origin,
+          key: SAVE_KEY,
+          value: localStorage.getItem(SAVE_KEY),
+        };
+
+        if (!payload.value) {
+          setStatus("내보낼 로컬 세이브가 없습니다.", "error");
+          return;
+        }
+
+        downloadText(`non-k-sa-biver-save-${Date.now()}.json`, JSON.stringify(payload, null, 2));
+        setStatus("현재 로컬 세이브를 파일로 내보냈습니다.", "ok");
+      });
+
+      document.getElementById("deleteButton").addEventListener("click", () => {
+        const current = localStorage.getItem(SAVE_KEY);
+        if (!current) {
+          setStatus("삭제할 로컬 세이브가 없습니다.", "error");
+          return;
+        }
+        if (!confirm("현재 로컬 세이브를 삭제할까요? 삭제 전 자동 백업은 localStorage에 남깁니다.")) return;
+
+        localStorage.setItem(`${SAVE_KEY}_backup_${Date.now()}`, current);
+        localStorage.removeItem(SAVE_KEY);
+        refreshSummary();
+        setStatus("현재 로컬 세이브를 삭제했습니다.", "ok");
+      });
+
+      document.getElementById("saveFile").addEventListener("change", async (event) => {
+        const file = event.currentTarget.files?.[0];
+        if (!file) return;
+        try {
+          saveInput.value = await file.text();
+          setStatus("파일 내용을 불러왔습니다. 적용하려면 로컬에 적용을 누르세요.", "ok");
+        } catch (error) {
+          setStatus(error instanceof Error ? error.message : String(error), "error");
+        }
+      });
+
+      document.getElementById("applyButton").addEventListener("click", () => {
+        try {
+          applySaveFromText(saveInput.value);
+        } catch (error) {
+          setStatus(error instanceof Error ? error.message : String(error), "error");
+        }
+      });
+
+      refreshSummary();
+    </script>
+  </body>
+</html>

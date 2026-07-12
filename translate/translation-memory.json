@@ -1,5 +1,12 @@
 [
   {
+    "source": "……いいだろう、[wait:0.5]そこまで言うなら、容赦はしねぇ。\\nお前のそのイカれた熱意、俺が正面から全部ねじ伏せてやるよ。[wait:0.5]覚悟しろよ……っ！",
+    "korean": "……좋다,[wait:0.5] 그렇게까지 말한다면 봐주지 않으마.\\n네 그 정신 나간 열정을 내가 정면에서 모조리 꺾어 주지.[wait:0.5] 각오해라……!",
+    "speaker": "タガン",
+    "context": "dialogue",
+    "note": "v0.7 bottom route"
+  },
+  {
     "source": "……いいだろう、乗ってやるよ。\\nお前のそのイカれた熱意に免じて、今夜は俺のプライドも全部明け渡してやる。お前の手並みを見せてもらおうじゃねぇか……っ！",
     "korean": "……좋다, 어울려 주마.\\n네 그 미친 열의에 봐서, 오늘 밤은 내 자존심까지 전부 맡겨 주지. 네 솜씨 한번 보자꾸나……!",
     "speaker": "タガン",
@@ -19,6 +26,13 @@
     "speaker": "アルバルト",
     "context": "gift",
     "note": "gift response; name preserved"
+  },
+  {
+    "source": "がっはっは！[wait:0.5] そうかそうか！身体は正直じゃねぇか！\\n普段のあの突拍子もない余裕はどこへ行った？[wait:0.5]",
+    "korean": "으하하하![wait:0.5] 그래, 그래! 몸은 솔직하구나!\\n평소 그 황당할 만큼 여유롭던 모습은 어디 갔냐?[wait:0.5]",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
   },
   {
     "source": "前にうっかり服のまま洗おうとしたら、一瞬でボロボロにされて参ったよ。\\n……まあ、今はこうして、お互い気兼ねなくやれるからいいけどさ。",
@@ -56,6 +70,13 @@
     "note": "affinity 400 night"
   },
   {
+    "source": "『くやしい』だぁ？[wait:0.5] 口ではそんな生意気なこと言っておいて、中じゃあこれでもかってくらい俺のを歓迎してやがるぞ？",
+    "korean": "\"분하다\"고?[wait:0.5] 입으로는 그렇게 건방진 소리를 하면서, 속으로는 있는 힘껏 내 걸 반기고 있잖아?",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
+  },
+  {
     "source": "……勘違いすんなよ？ こういうのは、お前が相手だからだぜ。……お前は、俺にとって……ただの後輩以上に、大切な相棒なんだからな。",
     "korean": "……오해하지 마라. 이런 건 상대가 너라서야. ……너는 나한테…… 그냥 후배 이상으로 소중한 파트너니까.",
     "speaker": "アルバルト",
@@ -68,6 +89,13 @@
     "speaker": "タガン",
     "context": "dialogue",
     "note": "adult event after"
+  },
+  {
+    "source": "……ほれ！[wait:0.3]どうだっ！？[wait:0.5]お前の中がうねって……感じてるのが全部伝わってきてるぞ……ッ！！",
+    "korean": "……자![wait:0.3] 어떠냐!?[wait:0.5] 네 안이 꿈틀대며 느끼는 게 전부 전해진다……!!",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
   },
   {
     "source": "それはそうと, お前の持ってたのは「ボススライムのコア」だったみたいだな…[wait]\\nあんなデカいのは俺も初めて見たぜ…",
@@ -124,6 +152,13 @@
     "speaker": "タガン",
     "context": "scenario",
     "note": "adult event after"
+  },
+  {
+    "source": "[wait:1.0]……おいおい、お前のその、惚けたような締まりのない顔……[wait:0.5]最高にそそるぞ……ォっ！",
+    "korean": "[wait:1.0]……이봐, 그 얼빠져서 풀어진 얼굴……[wait:0.5] 최고로 꼴리는군……!",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
   },
   {
     "source": "俺も今日はこっちで狩りをしてたんだが……[wait:0.5]この暑さだろ？\\n結局、水浴びしに来た感じになっちまったよ",
@@ -203,6 +238,13 @@
     "note": "토큰 보존"
   },
   {
+    "source": "嘘だろ……まともにヤるの初めてだからって、まだそこまで動かしてねぇのに……？ こんなことありえるのか……？",
+    "korean": "말도 안 돼…… 제대로 하는 건 처음이라지만, 아직 그렇게 움직이지도 않았는데……? 이럴 수가 있나……?",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
+  },
+  {
     "source": "いやいや！そりゃ驚くだろ！？ふざけて驚かすにしてもこんなおっさんのケツ舐めるなんて相当肝据わってるなお前…",
     "korean": "아니 아니! 그야 놀라지 않겠냐!? 장난으로 놀래킨다 해도 이런 아저씨 엉덩이를 핥다니, 너 배짱 하나는 대단하구나…",
     "speaker": "タガン",
@@ -215,6 +257,13 @@
     "speaker": "アルバルト",
     "context": "ruins clear",
     "note": "줄바꿈 보존"
+  },
+  {
+    "source": "……お前……っ、まだ先っぽしか入ってねぇのに……絞めすぎだ……っ！[wait:0.5]はぁ、 はぁ……！",
+    "korean": "……너…… 아직 끝부분밖에 안 들어갔는데…… 너무 조이잖아……![wait:0.5] 하아, 하아……!",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
   },
   {
     "source": "だが、悪かねぇ。お前のその、がっつくような執着……。\\n金貨を数えてる時の俺より、よっぽど必死だったぜ…",
@@ -266,6 +315,13 @@
     "note": "gift response"
   },
   {
+    "source": "……ふぅ。[wait:0.8]何日ぶりだ…？[wait:0.5]玉ン中が弾けるような感覚だったぞ……",
+    "korean": "……후우.[wait:0.8] 며칠 만이지…?[wait:0.5] 불알 안쪽이 터지는 줄 알았어……",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
+  },
+  {
     "source": "……笑うなよ。俺だって、必死なんだ。……お前の目に、俺はどう映ってる？ ……情けねぇ顔してねぇか？",
     "korean": "……웃지 마라. 나도 필사적이라고. ……네 눈에 나는 어떻게 보이냐? ……한심한 얼굴은 아니지?",
     "speaker": "アルバルト",
@@ -287,6 +343,13 @@
     "note": "성인 이벤트"
   },
   {
+    "source": "……ほら、もっと……力を抜けよ。[wait:0.5]多分…大丈夫だから、[wait:0.5] な？",
+    "korean": "……자, 좀 더…… 힘 빼.[wait:0.5] 아마… 괜찮을 테니까,[wait:0.5] 응?",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
+  },
+  {
     "source": "大抵、興味本位で誘っといて、いざって時に『入るわけない』なんて言われちまうのがオチだったがな（笑）",
     "korean": "대개는 호기심에 불러 놓고, 막상 닥치면 '들어갈 리가 없잖아' 소리나 듣는 게 결말이었지만 말이다. 하하.",
     "speaker": "タガン",
@@ -299,6 +362,13 @@
     "speaker": "タガン",
     "context": "scenario",
     "note": "adult event"
+  },
+  {
+    "source": "……覚悟しろよ？[wait:0.5] 途中で泣いて謝っても、絶対に腰は止めてやらねぇからな……っ！",
+    "korean": "……각오해라.[wait:0.5] 중간에 울면서 빌어도 절대 허리를 멈춰 주지 않을 테니까……!",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
   },
   {
     "source": "！？！？　なっ！？おいおい！くすぐってぇぞ！？そんなに顔動かしたら俺のケツ毛が絡まっちまうぞ(笑)",
@@ -399,6 +469,20 @@
     "note": "토큰/줄바꿈 보존"
   },
   {
+    "source": "……笑うなよ。俺だって男を抱くのなんて初めてで、頭がどうにかなりそうなくらい必死んだって…。",
+    "korean": "……웃지 마. 나도 남자를 안는 건 처음이라 머리가 이상해질 만큼 필사적이니까….",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
+  },
+  {
+    "source": "[wait:0.5]……さぁて、お喋りはここまでだ。[wait:0.5]本番はここからだぞ？",
+    "korean": "[wait:0.5]……자, 수다는 여기까지다.[wait:0.5] 진짜는 이제부터라고?",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
+  },
+  {
     "source": "急にふらついたのは、やっぱり暑さで眩暈がしたんだろ？\\nもし調子が悪かったら無理はすんなよ",
     "korean": "갑자기 휘청인 건 역시 더위 때문에 어지러웠던 거지?\\n몸 상태가 안 좋으면 무리하지 마라.",
     "speaker": "アルバルト",
@@ -411,6 +495,20 @@
     "speaker": "アルバルト",
     "context": "location talk",
     "note": "타간 호칭"
+  },
+  {
+    "source": "うっあっ！……っ、 ぅあぁぁ……！！[wait:0.5]これが入れる……感覚なんだな……",
+    "korean": "우앗!……윽, 으아아……!![wait:0.5] 이게 넣는…… 감각이구나……",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
+  },
+  {
+    "source": "お前と一つになってると思うと……なんだか、すごく……満たされてる感じがするんだよな……。",
+    "korean": "너랑 하나가 됐다고 생각하니…… 왠지 정말…… 가득 채워진 기분이야…….",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
   },
   {
     "source": "…ったく…お前には本当に驚かされることばかりだな…いや、今更、とやかくは言わねぇけどよ…",
@@ -439,6 +537,13 @@
     "speaker": "アルバルト",
     "context": "ruins clear",
     "note": "줄바꿈 보존"
+  },
+  {
+    "source": "……っ、く……！ 待て、そこ、……っ、そんな締め付けると……！俺も声が出ちまう……っ！",
+    "korean": "……윽……! 잠깐, 거기, 그렇게 조이면……! 나도 소리가 나오잖아……!",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
   },
   {
     "source": "そうか！助かる！\\nこの下に空間には、その辺の床板に怪しいところがあると思うんだが…",
@@ -504,6 +609,20 @@
     "note": "보호자 톤"
   },
   {
+    "source": "（アルバルトはゆっくりと上着を脱ぎ、たくましい胸を晒して主人公をベッドに押し倒す）",
+    "korean": "(알베르트는 천천히 상의를 벗어 탄탄한 가슴을 드러내고 주인공을 침대에 눕힌다)",
+    "speaker": "",
+    "context": "narration",
+    "note": "v0.7 seme route"
+  },
+  {
+    "source": "……はは、……参った。……腰に力が入らねぇ、これじゃ明日、森に行けねぇかもな……。",
+    "korean": "……하하, ……난감하네. ……허리에 힘이 안 들어가. 이러다 내일 숲에 못 갈지도 모르겠어…….",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
+  },
+  {
     "source": "…って、なんだ？お前、歴戦の身体を見てみたいって？\\n俺はしがない商人だってのに…",
     "korean": "…그래서, 뭐라고? 너, 산전수전 다 겪은 몸을 보고 싶다고?\\n나는 그저 변변찮은 상인일 뿐인데…",
     "speaker": "タガン",
@@ -523,6 +642,20 @@
     "speaker": "タガン",
     "context": "scenario",
     "note": "affinity 200"
+  },
+  {
+    "source": "がっはっは！[wait:0.5] お前、本当にどこまで俺を驚かせりゃ気が済むんだ！",
+    "korean": "으하하하![wait:0.5] 너, 대체 어디까지 날 놀라게 해야 직성이 풀리냐!",
+    "speaker": "タガン",
+    "context": "dialogue",
+    "note": "v0.7 bottom route"
+  },
+  {
+    "source": "……まさか、[wait:0.5]今さら怖気づいて逃げようなんて思ってねぇだろうな？",
+    "korean": "……설마,[wait:0.5] 이제 와서 겁먹고 도망칠 생각은 아니겠지?",
+    "speaker": "タガン",
+    "context": "dialogue",
+    "note": "v0.7 bottom route"
   },
   {
     "source": "まぁ、世の中にはお前みたいな、他人とは一風変わったこだわりを持ってる奴もいるんだな",
@@ -581,6 +714,13 @@
     "note": "affinity 400 night"
   },
   {
+    "source": "ナイスファイト！\\n生存時間: ${t}分${e%60}秒\\nスコア: ${s}",
+    "korean": "잘 싸웠어!\\n생존 시간: ${t}분 ${e%60}초\\n점수: ${s}",
+    "speaker": "",
+    "context": "battle/message",
+    "note": "v0.7 dynamic template"
+  },
+  {
     "source": "えっ？[wait:0.5]そうじゃない……？\\nじゃあなんだ、どこか痛むのか？",
     "korean": "뭐?[wait:0.5]그게 아니라고……?\\n그럼 뭐야, 어디 아픈 거냐?",
     "speaker": "アルバルト",
@@ -595,11 +735,46 @@
     "note": "걱정"
   },
   {
+    "source": "それじゃ……押し込むぞ……。[wait:0.5]痛かったら遠慮なく言えよ……。",
+    "korean": "그럼…… 넣는다…….[wait:0.5] 아프면 바로 말해…….",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
+  },
+  {
+    "source": "……お前…… っ、 [wait:0.5]はぁ、 [wait:0.5]はぁ……！",
+    "korean": "……너…… 윽, [wait:0.5]하아, [wait:0.5]하아……!",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
+  },
+  {
     "source": "あぁ、でも……昔、騎士団にいた頃は水浴びの時にやたらと触ってくる奴がいたな……",
     "korean": "아, 그래도…… 옛날 기사단에 있을 때 물가에서 씻다 보면 괜히 만지작거리던 녀석은 있었지……",
     "speaker": "タガン",
     "context": "scenario",
     "note": "adult talk"
+  },
+  {
+    "source": "……おい、そんなに身体を硬くしてどうした。[wait:0.5]緊張してんのか？",
+    "korean": "……야, 왜 그렇게 몸을 굳히고 있어.[wait:0.5] 긴장했냐?",
+    "speaker": "タガン",
+    "context": "dialogue",
+    "note": "v0.7 bottom route"
+  },
+  {
+    "source": "まさか、こんな年になって、お前みたいな新人をベッドで可愛がることになるとはな。",
+    "korean": "설마 이 나이에 너 같은 신입을 침대에서 귀여워하게 될 줄이야.",
+    "speaker": "タガン",
+    "context": "dialogue",
+    "note": "v0.7 bottom route"
+  },
+  {
+    "source": "俺をここまで猛らせて本気にさせるなんて、[wait:0.5]大した新人だよ……",
+    "korean": "날 이렇게까지 달아오르게 해서 진심으로 덤비게 만들다니,[wait:0.5] 대단한 신입이야……",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
   },
   {
     "source": "ブーツや弓の弦に塗るメンテナンス素材。アルバルトへのプレゼントに使えそうだ。",
@@ -644,6 +819,13 @@
     "note": "사후 대화"
   },
   {
+    "source": "……今まで女相手でも怖がられてばっかで、まともに使ったことすらねぇからな……",
+    "korean": "……지금까지 여자들도 무서워하기만 해서 제대로 써 본 적도 없거든……",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
+  },
+  {
     "source": "これからも、たくさんのモンスターたちと出会えるといいね。\\n応援しているよ！",
     "korean": "앞으로도 많은 몬스터들과 만날 수 있으면 좋겠다.\\n응원하고 있을게!",
     "speaker": "ソディオ",
@@ -684,6 +866,27 @@
     "speaker": "タガン",
     "context": "scenario",
     "note": "adult event"
+  },
+  {
+    "source": "……なるほどな、[wait:0.5]男だろうがケツの中の感触は女と同じだな…",
+    "korean": "……그렇군,[wait:0.5] 남자라도 안쪽 감촉은 여자랑 똑같구만…",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
+  },
+  {
+    "source": "ほら、どこが気持ちいいか、正直に言ってみろ？[wait:0.8]……ここか？",
+    "korean": "자, 어디가 좋은지 솔직히 말해 봐.[wait:0.8] ……여긴가?",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
+  },
+  {
+    "source": "おうおぅ……！[wait:0.5]いっちょ前に締め付けてくるじゃねぇか……！",
+    "korean": "오오……![wait:0.5] 제법 야무지게 조여 오잖아……!",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
   },
   {
     "source": "……はは、まいったな。まさかそんな言葉が飛んでくるとは思わなかったぜ……。",
@@ -735,6 +938,13 @@
     "note": "상황 대사"
   },
   {
+    "source": "ただ……俺は男相手は初めてだからな。加減も、勝手も、正直よく分かってねぇ。",
+    "korean": "그냥…… 남자를 상대하는 건 처음이라. 어느 정도로 해야 할지도, 어떻게 해야 할지도 솔직히 잘 모르겠어.",
+    "speaker": "アルバルト",
+    "context": "dialogue",
+    "note": "v0.7 seme route"
+  },
+  {
     "source": "貴重な客候補には死なれちゃこまるからな、\\n必要なものがあれば言ってくれ。",
     "korean": "귀한 손님 후보가 죽어 버리면 곤란하거든.\\n필요한 게 있으면 말해.",
     "speaker": "タガン",
@@ -784,6 +994,20 @@
     "note": "adult event after"
   },
   {
+    "source": "……それにしても、騎士団時代、新兵を徹底的に鍛えてやったことはあったが……",
+    "korean": "……그러고 보니 기사단 시절, 신병들을 호되게 굴려 본 적은 있지만……",
+    "speaker": "タガン",
+    "context": "dialogue",
+    "note": "v0.7 bottom route"
+  },
+  {
+    "source": "……ぐ、ぅ……ッ！[wait:0.5] お前、そんな声出すんじゃねぇよ……",
+    "korean": "……윽……![wait:0.5] 너, 그런 소리 내지 마……",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
+  },
+  {
     "source": "獣脂か？気が利くな。\\nブーツや弓の手入れに丁度欲しかったんだ。助かるよ。",
     "korean": "짐승 기름인가? 센스 있네.\\n부츠나 활을 손질하는 데 마침 필요했거든. 도움이 됐어.",
     "speaker": "アルバルト",
@@ -826,6 +1050,13 @@
     "note": "adult talk"
   },
   {
+    "source": "……がっはっは！[wait:0.5] 人生、何が起きるか分からねぇもんだ",
+    "korean": "……으하하하![wait:0.5] 인생은 정말 모르는 법이군.",
+    "speaker": "タガン",
+    "context": "dialogue",
+    "note": "v0.7 bottom route"
+  },
+  {
     "source": "……で、そろそろいい加減にして欲しいって時に、たまたま総隊副長が来てよ。",
     "korean": "……그래서 이제 슬슬 그만 좀 했으면 싶던 참에, 마침 총대 부단장이 온 거야.",
     "speaker": "タガン",
@@ -838,6 +1069,13 @@
     "speaker": "アルバルト",
     "context": "max event",
     "note": "adult event; token preserved"
+  },
+  {
+    "source": "周囲を旋回し守ってくれる光の精霊を召喚する。※所持しているだけで自動発動",
+    "korean": "주위를 돌며 지켜 주는 빛의 정령을 소환한다. ※ 소지하고 있기만 해도 자동 발동",
+    "speaker": "",
+    "context": "item/description",
+    "note": "v0.7"
   },
   {
     "source": "あー。いい、いい、分かってる！助けてもらったのには変わりはないからな！",
@@ -889,6 +1127,20 @@
     "note": "affinity 400 request"
   },
   {
+    "source": "命中した敵から別の敵へと電撃が連鎖する槍。※所持しているだけで自動発動",
+    "korean": "명중한 적에게서 다른 적으로 전격이 이어지는 투창. ※ 소지하고 있기만 해도 자동 발동",
+    "speaker": "",
+    "context": "item/description",
+    "note": "v0.7"
+  },
+  {
+    "source": "周囲に衝撃波を放ち敵をノックバックさせる。※所持しているだけで自動発動",
+    "korean": "주위에 충격파를 일으켜 적을 밀쳐 낸다. ※ 소지하고 있기만 해도 자동 발동",
+    "speaker": "",
+    "context": "item/description",
+    "note": "v0.7"
+  },
+  {
     "source": "狩人同士、お互い様だ、分からないことがあったら何でも聞いてくれよな？",
     "korean": "사냥꾼끼리는 서로 돕는 거지. 모르는 게 있으면 뭐든 물어봐라.",
     "speaker": "アルバルト",
@@ -908,6 +1160,13 @@
     "speaker": "アルバルト",
     "context": "about Alvart",
     "note": "당황"
+  },
+  {
+    "source": "お前の中が気持ちよすぎて……頭飛びそうになるぐらいイっちまったぜ……",
+    "korean": "네 안이 너무 좋아서…… 머리가 날아갈 것처럼 가 버렸어……",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
   },
   {
     "source": "…お前が面白がって見るから、なかなか萎えてくれねぇよ。困ったもんだな",
@@ -987,6 +1246,13 @@
     "note": "전투 조언"
   },
   {
+    "source": "はは……まいったな。まさか、そっちを頼まれるとは思ってなかったぜ。",
+    "korean": "하하…… 난감하네. 설마 그쪽을 부탁할 줄은 몰랐어.",
+    "speaker": "アルバルト",
+    "context": "dialogue",
+    "note": "v0.7 seme route"
+  },
+  {
     "source": "ふふ、そんなに真剣に覗き込まれると、この子も少し照れてるみたいだよ",
     "korean": "후후, 그렇게 진지하게 들여다보면 이 녀석도 조금 부끄러운가 봐.",
     "speaker": "ソディオ",
@@ -1022,6 +1288,13 @@
     "note": ""
   },
   {
+    "source": "いいぜ、お前のその熱、俺のやり方で全部受け止めて、分からせてやる。",
+    "korean": "좋아, 네 그 열기, 내 방식대로 전부 받아 내서 제대로 알려 주마.",
+    "speaker": "タガン",
+    "context": "dialogue",
+    "note": "v0.7 bottom route"
+  },
+  {
     "source": "そんなところで突っ立ってないで、お前もどうだ？\\n気持ちいいぜ！",
     "korean": "거기 멍하니 서 있지 말고, 너도 어때?\\n시원해서 좋다!",
     "speaker": "アルバルト",
@@ -1043,6 +1316,20 @@
     "note": "은혜 갚기"
   },
   {
+    "source": "お前に痛い思いや怖い思いをさせるのは……さすがに、と思ってさ…。",
+    "korean": "너한테 아프거나 무서운 일을 겪게 하는 건…… 아무래도 좀 그렇잖아….",
+    "speaker": "アルバルト",
+    "context": "dialogue",
+    "note": "v0.7 seme route"
+  },
+  {
+    "source": "（アルバルトはベッドの端に腰を下ろし、主人公の方へ手を差し出す）",
+    "korean": "(알베르트는 침대 끝에 걸터앉아 주인공에게 손을 내민다)",
+    "speaker": "",
+    "context": "narration",
+    "note": "v0.7 seme route"
+  },
+  {
     "source": "幼体の寝床に敷くための素材。ソディオへのプレゼントに使えそうだ。",
     "korean": "어린 개체의 잠자리에 깔아 줄 소재. 소디오에게 선물하면 좋아할 것 같다.",
     "speaker": "",
@@ -1062,6 +1349,20 @@
     "speaker": "タガン",
     "context": "scenario",
     "note": "adult event"
+  },
+  {
+    "source": "そうやって俺のを美味そうに咥え込むなんて、お前相当スキモノだな？",
+    "korean": "그렇게 내 걸 맛있다는 듯 물고 있다니, 너도 꽤 밝히는구나?",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
+  },
+  {
+    "source": "はぁっ…[wait:0.8]はぁっ…[wait:0.8]はぁっ…",
+    "korean": "하아…[wait:0.8]하아…[wait:0.8]하아…",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
   },
   {
     "source": "（見たことろ外傷は無いけど…ズボンが溶かされて粘液まみれだ…）",
@@ -1097,6 +1398,27 @@
     "speaker": "アルバルト",
     "context": "about Alvart",
     "note": "성인 질문 완화"
+  },
+  {
+    "source": "……って、おい。お前までそんなに身構えてんなよ。ほら、力抜け。",
+    "korean": "……야, 너까지 그렇게 긴장하면 어떡해. 자, 힘 빼.",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
+  },
+  {
+    "source": "だ……[wait:0.5]大丈夫……[wait:0.5]かよ？",
+    "korean": "괘……[wait:0.5] 괜찮……[wait:0.5]은 거지?",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
+  },
+  {
+    "source": "……とか言っても、やっぱり、俺のこれ……デカすぎて、痛ぇよな？",
+    "korean": "……그래도, 역시 내 거…… 너무 커서 아프지?",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
   },
   {
     "source": "よーし！おかげ様でいつもより奇麗にしてあげれたよ！ありがとう！",
@@ -1141,6 +1463,13 @@
     "note": "adult event toned down"
   },
   {
+    "source": "敵を浮遊させ無防備にする矢を放つ。※所持しているだけで自動発動",
+    "korean": "적을 띄워 무방비 상태로 만드는 화살을 발사한다. ※ 소지하고 있기만 해도 자동 발동",
+    "speaker": "",
+    "context": "item/description",
+    "note": "v0.7"
+  },
+  {
     "source": "……さあ、少し休んだら、また明日からよろしく……な？ 相棒。",
     "korean": "……자, 조금 쉬고 나면 내일부터 또 잘 부탁한다…… 알겠지? 파트너.",
     "speaker": "アルバルト",
@@ -1155,6 +1484,27 @@
     "note": "전투 조언"
   },
   {
+    "source": "（アルバルトは困ったように頭を掻き、しばらく視線を泳がせる）",
+    "korean": "(알베르트는 곤란한 듯 머리를 긁적이며 한동안 시선을 피한다)",
+    "speaker": "",
+    "context": "narration",
+    "note": "v0.7 seme route"
+  },
+  {
+    "source": "……まぁ、入るか入らないは…やってみないと分からねぇけどな…",
+    "korean": "……뭐, 들어갈지는… 해 봐야 알겠지만…",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
+  },
+  {
+    "source": " あぁっ、……お前ん中、……ドロドロで……！熱すぎるっ……！",
+    "korean": " 아아…… 네 안쪽…… 끈적끈적하고……! 너무 뜨거워……!",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
+  },
+  {
     "source": "お前のその突拍子もない要望、俺の身体で全部受け止めてやるよ。",
     "korean": "네 그 엉뚱한 요구, 내 몸으로 전부 받아 주마.",
     "speaker": "タガン",
@@ -1162,11 +1512,25 @@
     "note": "affinity 400 night"
   },
   {
+    "source": "おい、聞いてんのか！？[wait:0.5]ちゃんと俺を見ろ！",
+    "korean": "야, 듣고 있냐!?[wait:0.5] 똑바로 날 봐!",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
+  },
+  {
     "source": "所持している分だけ受けるダメージを軽減する。（パッシブ効果）",
     "korean": "소지한 수만큼 받는 피해를 줄인다. (패시브 효과)",
     "speaker": "",
     "context": "item/effect",
     "note": ""
+  },
+  {
+    "source": "敵を引き寄せる重力網を射出する。※所持しているだけで自動発動",
+    "korean": "적을 끌어당기는 중력 그물을 발사한다. ※ 소지하고 있기만 해도 자동 발동",
+    "speaker": "",
+    "context": "item/description",
+    "note": "v0.7"
   },
   {
     "source": "非常に軽く強靭な羽。アルバルトへのプレゼントに使えそうだ。",
@@ -1232,6 +1596,13 @@
     "note": "affinity 400 night"
   },
   {
+    "source": "……は？[wait:0.5] 俺に……責められたい、だと？",
+    "korean": "……뭐?[wait:0.5] 나한테…… 안기고 싶다고?",
+    "speaker": "タガン",
+    "context": "dialogue",
+    "note": "v0.7 bottom route"
+  },
+  {
     "source": "売却するアイテムを選択してください (買取価格: 50%)",
     "korean": "팔 아이템을 선택하세요 (판매가: 50%)",
     "speaker": "",
@@ -1281,6 +1652,13 @@
     "note": "토큰 보존"
   },
   {
+    "source": "……なるほどな。つまり、俺がお前を抱く……ってことだろ？",
+    "korean": "……그렇군. 그러니까 내가 널 안는…… 거지?",
+    "speaker": "アルバルト",
+    "context": "dialogue",
+    "note": "v0.7 seme route"
+  },
+  {
     "source": "…と思ったけど、君はモンスターの卵を持ってないみたいだね",
     "korean": "...라고 하려 했는데, 너는 몬스터 알이 없는 것 같네.",
     "speaker": "ソディオ",
@@ -1307,6 +1685,13 @@
     "speaker": "タガン",
     "context": "narration",
     "note": "adult event after"
+  },
+  {
+    "source": "つっても……男の身体を組み敷くなんて初めてだからなぁ……",
+    "korean": "그래도…… 남자 몸을 깔아뭉개는 건 처음이라 말이지……",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
   },
   {
     "source": "自動でブーメランを投擲する。※所持しているだけで自動発動",
@@ -1351,6 +1736,20 @@
     "note": "걱정"
   },
   {
+    "source": "……一応、俺がちゃんと……お前をリードしてやるからさ。",
+    "korean": "……일단 내가 제대로…… 리드해 줄 테니까.",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
+  },
+  {
+    "source": "……ッ ！？ [wait:0.5]……あ、ぐ……ッ！！",
+    "korean": "……읏!? [wait:0.5]……아, 윽……!!",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
+  },
+  {
     "source": "よーしそれじゃ、今からこの子の汚れを落としてあげよう。",
     "korean": "좋아, 그럼 이제 이 녀석을 씻겨 주자.",
     "speaker": "ソディオ",
@@ -1384,6 +1783,13 @@
     "speaker": "タガン",
     "context": "scenario",
     "note": "adult event"
+  },
+  {
+    "source": "……ほら、力抜けよ……[wait:0.8]入れるぞ……",
+    "korean": "……자, 힘 빼……[wait:0.8] 넣는다……",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
   },
   {
     "source": "っ……！[wait:0.5]あ……おい、そこは……っ。",
@@ -1428,6 +1834,13 @@
     "note": "아이템명"
   },
   {
+    "source": "……ずっと持て余してたデカブツだったのも悪いけどよ…",
+    "korean": "……계속 주체 못 하던 물건이 너무 컸던 탓도 있지만…",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
+  },
+  {
     "source": "……まさか、今さら怖気づいてるわけじゃねぇだろうな？",
     "korean": "……설마 이제 와서 겁먹은 건 아니겠지?",
     "speaker": "タガン",
@@ -1449,6 +1862,13 @@
     "note": "adult event"
   },
   {
+    "source": "この俺に『責められたい』なんてデカい口を叩いたんだ。",
+    "korean": "이 나한테 \"안기고 싶다\"고 큰소리쳤잖아.",
+    "speaker": "タガン",
+    "context": "dialogue",
+    "note": "v0.7 bottom route"
+  },
+  {
     "source": "……ッ、！？[wait:0.5]……あ、ぐ……ッ！！",
     "korean": "……읏, !?[wait:0.5] ……아, 윽……!!",
     "speaker": "アルバルト",
@@ -1468,6 +1888,20 @@
     "speaker": "",
     "context": "UI/prompt",
     "note": ""
+  },
+  {
+    "source": "ずっと持て余してたから、加減が分からなくて……っ!",
+    "korean": "계속 주체를 못 했으니, 어느 정도로 해야 할지 몰라서……!",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
+  },
+  {
+    "source": "お前が俺のチンポ、こんなにギチギチに締め付けて……",
+    "korean": "네가 내 자지를 이렇게 꽉 조여 오고……",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
   },
   {
     "source": "ペットに与えると経験値を獲得する(Exp+10)。",
@@ -1505,6 +1939,13 @@
     "note": "discount reward"
   },
   {
+    "source": "って……おい、[wait:0.5]聞こえてるのか？",
+    "korean": "……야,[wait:0.5] 듣고 있는 거냐?",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
+  },
+  {
     "source": "矢が3方向に拡散する。※所持しているだけで自動発動",
     "korean": "화살이 3방향으로 퍼진다. ※소지하고 있으면 자동 발동",
     "speaker": "",
@@ -1524,6 +1965,20 @@
     "speaker": "アルバルト",
     "context": "max event",
     "note": "성인 이벤트"
+  },
+  {
+    "source": "あ、……っ、 [wait:0.5] あぁ……！！",
+    "korean": "아……, [wait:0.5] 아아……!!",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
+  },
+  {
+    "source": "あっ…！くっ！！なんだ…！？堪えられねぇ…っ！？",
+    "korean": "앗…! 윽!! 뭐지…!? 못 참겠어……!?",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
   },
   {
     "source": "金の重さは誰よりも知ってるつもりだ…、感謝するぞ",
@@ -1568,6 +2023,13 @@
     "note": "affinity 400 night"
   },
   {
+    "source": "……ほら、[wait:0.3]ここが弱いのか！？",
+    "korean": "……자,[wait:0.3] 여기가 약한가!?",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
+  },
+  {
     "source": "（主人公がアルバルトの身体に触れ、愛撫が始まる）",
     "korean": "(주인공이 알베르트의 몸에 손을 대고, 애무가 시작된다)",
     "speaker": "",
@@ -1608,6 +2070,20 @@
     "speaker": "アルバルト",
     "context": "ruins clear",
     "note": "사후 대화"
+  },
+  {
+    "source": "へへっ……[wait:0.5]さすがだな……！",
+    "korean": "헤헤……[wait:0.5] 역시 대단하네……!",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
+  },
+  {
+    "source": "……ふぅ、 [wait:0.5]……ふぅ……。",
+    "korean": "……후우, [wait:0.5]……후우…….",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
   },
   {
     "source": "君も洗ってあげるときは服は脱いでおくのがいいよ",
@@ -1659,6 +2135,13 @@
     "note": "adult event"
   },
   {
+    "source": "……ったく、お前って奴は。[wait:0.5]",
+    "korean": "……정말, 너란 녀석은.[wait:0.5]",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
+  },
+  {
     "source": "あっ！ああああっっ！があぁあああぁぁぁっっ！！",
     "korean": "앗! 아아아아앗! 가아아아아아아앗!!",
     "speaker": "タガン",
@@ -1692,6 +2175,13 @@
     "speaker": "アルバルト",
     "context": "max event",
     "note": "당황"
+  },
+  {
+    "source": "……ははっ。俺まで気遣われてちゃ世話ねぇな。",
+    "korean": "……하하. 내가 오히려 걱정을 받으면 체면이 안 서지.",
+    "speaker": "アルバルト",
+    "context": "dialogue",
+    "note": "v0.7 seme route"
   },
   {
     "source": "……どうかな？ 何か変なものは混じってない？",
@@ -1771,6 +2261,13 @@
     "note": "성인 이벤트"
   },
   {
+    "source": "……不思議だな。……男の、身体なのに……。",
+    "korean": "……신기하네. ……남자, 몸인데도…….",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
+  },
+  {
     "source": "……よし、君はそっちから見ててくれるかな？",
     "korean": "...좋아, 너는 그쪽에서 봐 줄래?",
     "speaker": "ソディオ",
@@ -1841,11 +2338,25 @@
     "note": "성인 선택 수락"
   },
   {
+    "source": "突っ立ってると、こっちまで落ち着かねぇ。",
+    "korean": "가만히 서 있으면 나까지 진정이 안 돼.",
+    "speaker": "アルバルト",
+    "context": "dialogue",
+    "note": "v0.7 seme route"
+  },
+  {
     "source": "でも、勘違いするなよ？ 俺は女が好きだ。",
     "korean": "그래도 착각은 하지 마라. 나는 여자가 좋다.",
     "speaker": "タガン",
     "context": "dialogue",
     "note": "affinity 400 night"
+  },
+  {
+    "source": "……ほら、奥までしっかり味わいな……っ！",
+    "korean": "……자, 끝까지 제대로 느껴 봐라……!",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
   },
   {
     "source": "⛏️ 発掘ポイント出現判定 (設定確率)",
@@ -1916,6 +2427,13 @@
     "speaker": "アルバルト",
     "context": "ruins clear",
     "note": "걱정"
+  },
+  {
+    "source": "……っ、く……！ 待て、そこ、……っ！",
+    "korean": "……윽……! 잠깐, 거기……!",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
   },
   {
     "source": "モンスターの卵を手に入れたらまたおいで",
@@ -2072,6 +2590,20 @@
     "note": "당황"
   },
   {
+    "source": "……いや、嫌ってわけじゃねぇんだ。",
+    "korean": "……아니, 싫다는 건 아니야.",
+    "speaker": "アルバルト",
+    "context": "dialogue",
+    "note": "v0.7 seme route"
+  },
+  {
+    "source": "え…？俺？もう出しちまったのか…？",
+    "korean": "어…? 나? 벌써 싸 버린 거야…?",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
+  },
+  {
     "source": "分かった、気が向いたときでいいよ！",
     "korean": "알았어, 마음이 내킬 때 해 줘도 괜찮아!",
     "speaker": "ソディオ",
@@ -2126,6 +2658,13 @@
     "speaker": "タガン",
     "context": "scenario",
     "note": "affinity 300 start"
+  },
+  {
+    "source": "ん！？[wait:0.3]おっ！？",
+    "korean": "응!?[wait:0.3] 오!?",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
   },
   {
     "source": "（アルバルトに近づき、肌に触れる）",
@@ -2212,6 +2751,20 @@
     "note": "adult event"
   },
   {
+    "source": "たっぷり責めてやるからな……っ！",
+    "korean": "실컷 몰아붙여 주마……!",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
+  },
+  {
+    "source": "……ッッ！？[wait:0.6]",
+    "korean": "……읏!?[wait:0.6]",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
+  },
+  {
     "source": "[se:se_wind]えっ！？",
     "korean": "[se:se_wind]뭐!?",
     "speaker": "アルバルト",
@@ -2280,6 +2833,13 @@
     "speaker": "タガン",
     "context": "dialogue",
     "note": "max affinity route"
+  },
+  {
+    "source": "もっと、めちゃくちゃにして……",
+    "korean": "더, 엉망으로 만들어 줘……",
+    "speaker": "PLAYER",
+    "context": "choice",
+    "note": "v0.7 bottom route"
   },
   {
     "source": "よぉ、気を付けて行ってこいよ！",
@@ -2352,6 +2912,20 @@
     "note": ""
   },
   {
+    "source": "アルバルトからの恩返し（受け）",
+    "korean": "알베르트의 보답 (수)",
+    "speaker": "",
+    "context": "gallery/event title",
+    "note": "v0.7"
+  },
+  {
+    "source": "アルバルトからの恩返し（攻め）",
+    "korean": "알베르트의 보답 (공)",
+    "speaker": "",
+    "context": "gallery/event title",
+    "note": "v0.7"
+  },
+  {
     "source": "遺跡の罠にはまったアルバルト",
     "korean": "유적의 함정에 빠진 알베르트",
     "speaker": "",
@@ -2371,6 +2945,13 @@
     "speaker": "アルバルト",
     "context": "blue orb event",
     "note": "이벤트"
+  },
+  {
+    "source": "ちょっと大きいけど…頑張るよ",
+    "korean": "조금 크지만… 힘내 볼게",
+    "speaker": "PLAYER",
+    "context": "choice",
+    "note": "v0.7 seme route"
   },
   {
     "source": "いやいやいや！君がいるだろ？",
@@ -2433,13 +3014,6 @@
     "korean": "🏛️ 유적 (Ruins)",
     "speaker": "",
     "context": "UI/debug",
-    "note": ""
-  },
-  {
-    "source": "ナイスファイト！ 生存時間:",
-    "korean": "잘 싸웠어! 생존 시간:",
-    "speaker": "",
-    "context": "battle/message",
     "note": ""
   },
   {
@@ -2513,6 +3087,13 @@
     "note": "지시"
   },
   {
+    "source": "あ、……っ、 あぁ……！！",
+    "korean": "아, ……읏, 아아……!!",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
+  },
+  {
     "source": "スライムの手入れのひととき",
     "korean": "슬라임을 손질하는 한때",
     "speaker": "",
@@ -2546,6 +3127,13 @@
     "speaker": "タガン",
     "context": "scenario",
     "note": "adult event"
+  },
+  {
+    "source": "があぁあああぁぁぁっっ！！",
+    "korean": "가아아아아아앗!!",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
   },
   {
     "source": " 設定 (Options)",
@@ -2646,6 +3234,20 @@
     "note": ""
   },
   {
+    "source": "身体を張った恩返し（受け）",
+    "korean": "몸으로 갚는 보답 (수)",
+    "speaker": "",
+    "context": "gallery/event title",
+    "note": "v0.7"
+  },
+  {
+    "source": "身体を張った恩返し（攻め）",
+    "korean": "몸으로 갚는 보답 (공)",
+    "speaker": "",
+    "context": "gallery/event title",
+    "note": "v0.7"
+  },
+  {
     "source": "アルバルトとエッチしたい",
     "korean": "알베르트와 하고 싶어",
     "speaker": "",
@@ -2688,6 +3290,13 @@
     "note": "성인 이벤트"
   },
   {
+    "source": "アルバルトなら安心できる",
+    "korean": "알베르트라면 안심할 수 있어",
+    "speaker": "PLAYER",
+    "context": "choice",
+    "note": "v0.7 seme route"
+  },
+  {
     "source": "また何かあったらおいで。",
     "korean": "또 무슨 일 있으면 찾아와.",
     "speaker": "ソディオ",
@@ -2707,6 +3316,13 @@
     "speaker": "タガン",
     "context": "scenario",
     "note": "adult event"
+  },
+  {
+    "source": "滾っちまうじゃねぇか…！",
+    "korean": "더 달아오르잖아…!",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
   },
   {
     "source": "設定 (Options)",
@@ -2793,6 +3409,20 @@
     "note": ""
   },
   {
+    "source": "タガンとの時間４（攻め）",
+    "korean": "타간과의 시간 4 (공)",
+    "speaker": "",
+    "context": "gallery/event title",
+    "note": "v0.7"
+  },
+  {
+    "source": "タガンとの時間４（受け）",
+    "korean": "타간과의 시간 4 (수)",
+    "speaker": "",
+    "context": "gallery/event title",
+    "note": "v0.7"
+  },
+  {
     "source": "予想以上に無茶苦茶な夜",
     "korean": "예상보다 더 엉망진창인 밤",
     "speaker": "",
@@ -2828,6 +3458,13 @@
     "note": "相棒=파트너"
   },
   {
+    "source": "っあ！気持ちいい……！",
+    "korean": "읏! 좋아……!",
+    "speaker": "アルバルト",
+    "context": "scenario",
+    "note": "v0.7 seme route"
+  },
+  {
     "source": "そうかい！ありがとう！",
     "korean": "그래! 고마워!",
     "speaker": "ソディオ",
@@ -2861,6 +3498,13 @@
     "speaker": "タガン",
     "context": "dialogue",
     "note": "event end"
+  },
+  {
+    "source": "……くやしい、けど……",
+    "korean": "……분하지만……",
+    "speaker": "PLAYER",
+    "context": "choice",
+    "note": "v0.7 bottom route"
   },
   {
     "source": "ソディオ (魔物使い)",
@@ -3017,6 +3661,20 @@
     "note": ""
   },
   {
+    "source": "敵を吸い寄せる網を発射",
+    "korean": "적을 끌어당기는 그물 발사",
+    "speaker": "",
+    "context": "item/effect short",
+    "note": "v0.7"
+  },
+  {
+    "source": "周囲を公転するウィスプ",
+    "korean": "주위를 도는 위스프",
+    "speaker": "",
+    "context": "item/effect short",
+    "note": "v0.7"
+  },
+  {
     "source": "アルバルトへの恩返し",
     "korean": "알베르트에게 보답",
     "speaker": "",
@@ -3050,6 +3708,27 @@
     "speaker": "アルバルト",
     "context": "greeting",
     "note": "일상 대사"
+  },
+  {
+    "source": "攻め手になってほしい",
+    "korean": "네가 리드해 줬으면 해",
+    "speaker": "PLAYER",
+    "context": "choice",
+    "note": "v0.7 seme route"
+  },
+  {
+    "source": "……俺が、攻め手に？",
+    "korean": "……내가 리드해 달라고?",
+    "speaker": "アルバルト",
+    "context": "dialogue",
+    "note": "v0.7 seme route"
+  },
+  {
+    "source": "ほら、こっち来いよ。",
+    "korean": "자, 이리 와.",
+    "speaker": "アルバルト",
+    "context": "dialogue",
+    "note": "v0.7 seme route"
   },
   {
     "source": "ソディオ (魔物使い",
@@ -3127,6 +3806,13 @@
     "speaker": "",
     "context": "UI/choice adult",
     "note": ""
+  },
+  {
+    "source": "タガンに責められたい",
+    "korean": "타간에게 안기고 싶다",
+    "speaker": "PLAYER",
+    "context": "choice",
+    "note": "v0.7 bottom route"
   },
   {
     "source": "最高の恩返しだったよ",
@@ -3269,6 +3955,20 @@
     "note": ""
   },
   {
+    "source": "タガンに責められる夜",
+    "korean": "타간에게 안기는 밤",
+    "speaker": "",
+    "context": "gallery/event title",
+    "note": "v0.7"
+  },
+  {
+    "source": "周囲の敵を吹き飛ばす",
+    "korean": "주변의 적을 날려 버림",
+    "speaker": "",
+    "context": "item/effect short",
+    "note": "v0.7"
+  },
+  {
     "source": "アルバルト (狩人",
     "korean": "알베르트 (사냥꾼",
     "speaker": "アルバルト",
@@ -3323,6 +4023,13 @@
     "speaker": "アルバルト",
     "context": "ruins clear",
     "note": "당황"
+  },
+  {
+    "source": "けど、ありがとな。",
+    "korean": "그래도 고마워.",
+    "speaker": "アルバルト",
+    "context": "dialogue",
+    "note": "v0.7 seme route"
   },
   {
     "source": "ソディオとの手入れ",
@@ -3631,6 +4338,13 @@
     "speaker": "",
     "context": "UI/choice adult",
     "note": ""
+  },
+  {
+    "source": "あぁっ……っ！！",
+    "korean": "아아……!!",
+    "speaker": "タガン",
+    "context": "scenario",
+    "note": "v0.7 bottom route"
   },
   {
     "source": "この場所について",
@@ -4186,6 +4900,27 @@
     "note": ""
   },
   {
+    "source": "連鎖する電撃槍",
+    "korean": "연쇄 전격 투창",
+    "speaker": "",
+    "context": "item/effect short",
+    "note": "v0.7"
+  },
+  {
+    "source": "護衛のウィスプ",
+    "korean": "수호 위스프",
+    "speaker": "",
+    "context": "item",
+    "note": "v0.7"
+  },
+  {
+    "source": "反重力の吹き矢",
+    "korean": "반중력 바람총",
+    "speaker": "",
+    "context": "item",
+    "note": "v0.7"
+  },
+  {
     "source": "狩場について",
     "korean": "사냥터에 대해",
     "speaker": "アルバルト",
@@ -4314,13 +5049,6 @@
   {
     "source": "倒れた...",
     "korean": "쓰러졌다...",
-    "speaker": "",
-    "context": "battle/message",
-    "note": ""
-  },
-  {
-    "source": "秒 スコア:",
-    "korean": "초 스코어:",
     "speaker": "",
     "context": "battle/message",
     "note": ""
@@ -4527,6 +5255,27 @@
     "speaker": "",
     "context": "pet/quote",
     "note": ""
+  },
+  {
+    "source": "猟兵の重力網",
+    "korean": "사냥꾼의 중력 그물",
+    "speaker": "",
+    "context": "item",
+    "note": "v0.7"
+  },
+  {
+    "source": "雷光の投げ槍",
+    "korean": "뇌광 투창",
+    "speaker": "",
+    "context": "item",
+    "note": "v0.7"
+  },
+  {
+    "source": "獣避けの角笛",
+    "korean": "짐승 퇴치 뿔피리",
+    "speaker": "",
+    "context": "item",
+    "note": "v0.7"
   },
   {
     "source": "アルバルト",
@@ -5222,6 +5971,13 @@
     "note": ""
   },
   {
+    "source": "大丈夫",
+    "korean": "괜찮아",
+    "speaker": "PLAYER",
+    "context": "choice",
+    "note": "v0.7 seme route"
+  },
+  {
     "source": "包茎？",
     "korean": "포경이야?",
     "speaker": "PLAYER",
@@ -5269,6 +6025,13 @@
     "speaker": "",
     "context": "UI/choice",
     "note": ""
+  },
+  {
+    "source": "はい…",
+    "korean": "응…",
+    "speaker": "PLAYER",
+    "context": "choice",
+    "note": "v0.7 bottom route"
   },
   {
     "source": "かつ、",

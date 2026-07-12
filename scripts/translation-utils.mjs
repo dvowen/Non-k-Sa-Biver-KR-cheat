@@ -11,7 +11,7 @@ export function parseTranslationTsv(input) {
 
 export function collectSpecialTokens(text) {
   const tokens = [];
-  const tokenPattern = /\{[A-Za-z0-9_]+\}|\[(?:wait(?::[0-9.]+)?|se:[A-Za-z0-9_]+)\]/g;
+  const tokenPattern = /\$\{[^}\r\n]+\}|\{[A-Za-z0-9_]+\}|\[(?:wait(?::[0-9.]+)?|se:[A-Za-z0-9_]+)\]/g;
   for (const match of text.matchAll(tokenPattern)) {
     tokens.push(match[0]);
   }
@@ -59,6 +59,22 @@ export function jsEscapedFragmentPattern(source) {
   return new RegExp(escapeRegExp(toJsEscapedText(source, "")), "g");
 }
 
+function toRawTemplateText(value) {
+  return value.replaceAll("\\n", "\n").replaceAll("\\r", "\r");
+}
+
+export function rawTemplateFragmentPattern(source) {
+  return new RegExp(escapeRegExp(toRawTemplateText(source)), "g");
+}
+
+export function rawDynamicTemplateLiteralPattern(source) {
+  return new RegExp(`\`${escapeRegExp(toRawTemplateText(source))}\``, "g");
+}
+
+function toRawTemplateLiteral(value) {
+  return `\`${toRawTemplateText(value).replaceAll("`", "\\`")}\``;
+}
+
 export function mergeTranslationRows(rows) {
   const merged = new Map();
   for (const row of rows) {
@@ -87,10 +103,17 @@ export function replaceJsStringLiterals(input, translations) {
   for (const row of translations) {
     if (row.source === row.korean) continue;
     output = output.replace(jsStringLiteralPattern(row.source), `"${toJsEscapedText(row.korean)}"`);
+    if (row.source.includes("${")) {
+      output = output.replace(
+        rawDynamicTemplateLiteralPattern(row.source),
+        () => toRawTemplateLiteral(row.korean),
+      );
+    }
   }
   for (const row of translations) {
     if (row.source === row.korean || !isFragmentTranslation(row)) continue;
     output = output.replace(jsEscapedFragmentPattern(row.source), toJsEscapedText(row.korean, ""));
+    output = output.replace(rawTemplateFragmentPattern(row.source), toRawTemplateText(row.korean));
   }
   return output;
 }
@@ -100,8 +123,16 @@ export function countReplaceableJsStringLiterals(input, translations) {
   for (const row of translations) {
     if (row.source === row.korean) continue;
     total += input.match(jsStringLiteralPattern(row.source))?.length ?? 0;
+    if (row.source.includes("${")) {
+      total += input.match(rawDynamicTemplateLiteralPattern(row.source))?.length ?? 0;
+    }
     if (isFragmentTranslation(row)) {
-      total += input.match(jsEscapedFragmentPattern(row.source))?.length ?? 0;
+      const escapedPattern = jsEscapedFragmentPattern(row.source);
+      const rawPattern = rawTemplateFragmentPattern(row.source);
+      total += input.match(escapedPattern)?.length ?? 0;
+      if (rawPattern.source !== escapedPattern.source) {
+        total += input.match(rawPattern)?.length ?? 0;
+      }
     }
   }
   return total;

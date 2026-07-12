@@ -2,11 +2,15 @@ import fs from "node:fs";
 import http from "node:http";
 import path from "node:path";
 import process from "node:process";
-import { fileURLToPath } from "node:url";
+import { pathToFileURL } from "node:url";
+import {
+  SITE_ROOT_DIR,
+  UPSTREAM_BASE_PATH,
+  UPSTREAM_ORIGIN,
+} from "./scripts/version-config.mjs";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const siteRoot = path.join(__dirname, "site");
-const upstream = "https://funa-funa.sakura.ne.jp";
+const siteRoot = SITE_ROOT_DIR;
+const upstream = UPSTREAM_ORIGIN;
 const port = Number(process.env.PORT || 4173);
 
 const contentTypes = {
@@ -34,10 +38,10 @@ function safePath(urlPath) {
   return path.join(siteRoot, normalized);
 }
 
-function localPathForRequest(reqUrl) {
+export function localPathForRequest(reqUrl) {
   const url = new URL(reqUrl, `http://localhost:${port}`);
   let pathname = url.pathname;
-  if (pathname === "/") pathname = "/202604testtes004v6/";
+  if (pathname === "/") pathname = `${UPSTREAM_BASE_PATH}/`;
   if (pathname.endsWith("/")) pathname += "index.html";
   return { pathname: url.pathname, filePath: safePath(pathname), search: url.search };
 }
@@ -62,7 +66,8 @@ async function fetchAndCache(pathname, search, filePath) {
   return true;
 }
 
-const server = http.createServer(async (req, res) => {
+export function createServer() {
+  return http.createServer(async (req, res) => {
   try {
     const { pathname, filePath, search } = localPathForRequest(req.url || "/");
 
@@ -83,9 +88,13 @@ const server = http.createServer(async (req, res) => {
     res.writeHead(500, { "Content-Type": "text/plain; charset=utf-8" });
     res.end(`${error?.stack || error}\n`);
   }
-});
+  });
+}
 
-server.listen(port, "127.0.0.1", () => {
-  console.log(`Serving http://127.0.0.1:${port}/202604testtes004v6/`);
-  console.log("Missing assets will be fetched from the original site and cached under site/.");
-});
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  const server = createServer();
+  server.listen(port, "127.0.0.1", () => {
+    console.log(`Serving http://127.0.0.1:${port}${UPSTREAM_BASE_PATH}/`);
+    console.log("Missing assets will be fetched from the original site and cached under site/.");
+  });
+}

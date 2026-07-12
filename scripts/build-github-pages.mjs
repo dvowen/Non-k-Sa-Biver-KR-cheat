@@ -1,11 +1,17 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
+import {
+  GITHUB_PAGES_BASE_PATH,
+  SITE_ROOT_DIR,
+  SITE_VERSION_DIR,
+  UPSTREAM_BASE_PATH,
+} from "./version-config.mjs";
 
-const SOURCE_DIR = path.resolve("site");
+const SOURCE_DIR = SITE_ROOT_DIR;
 const DIST_DIR = path.resolve("dist");
-const LOCAL_BASE_PATH = "/202604testtes004v6";
-const DEFAULT_GITHUB_PAGES_BASE_PATH = "/Non-k-Sa-Biver-KR";
+const LOCAL_BASE_PATH = UPSTREAM_BASE_PATH;
+const DEFAULT_GITHUB_PAGES_BASE_PATH = GITHUB_PAGES_BASE_PATH;
 const TEXT_EXTENSIONS = new Set([
   ".css",
   ".html",
@@ -77,11 +83,11 @@ async function writeRootRedirect(distDir) {
 <html lang="ko">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="0; url=./202604testtes004v6/" />
+    <meta http-equiv="refresh" content="0; url=./${SITE_VERSION_DIR}/" />
     <title>Non-k Sa-BIVER</title>
   </head>
   <body>
-    <a href="./202604testtes004v6/">Non-k Sa-BIVER 열기</a>
+    <a href="./${SITE_VERSION_DIR}/">Non-k Sa-BIVER 열기</a>
   </body>
 </html>
 `;
@@ -101,7 +107,11 @@ export async function buildGithubPages({
   const options = { localBasePath, githubPagesBasePath };
   await fs.rm(distDir, { recursive: true, force: true });
   await fs.mkdir(distDir, { recursive: true });
-  await fs.cp(sourceDir, distDir, { recursive: true });
+  await fs.cp(
+    path.join(sourceDir, SITE_VERSION_DIR),
+    path.join(distDir, SITE_VERSION_DIR),
+    { recursive: true },
+  );
   const rewrittenFiles = await rewriteCopiedFiles(distDir, options);
   await writeRootRedirect(distDir);
   await writeNoJekyll(distDir);

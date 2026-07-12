@@ -1,4 +1,18 @@
-export const BASE_PATH = "/202604testtes004v6";
+import { UPSTREAM_BASE_PATH } from "./version-config.mjs";
+
+export const BASE_PATH = UPSTREAM_BASE_PATH;
+
+const KNOWN_UPSTREAM_MISSING_SUFFIXES = new Set([
+  "/assets/A-01aaegao01.png",
+  "/assets/A-01aanomal.png",
+  "/assets/cg/test01.png",
+  "/assets/icons/potion01.png",
+  "/assets/ui/pattern.png",
+]);
+
+export function isKnownUpstreamMissingAsset(assetPath) {
+  return [...KNOWN_UPSTREAM_MISSING_SUFFIXES].some((suffix) => assetPath.endsWith(suffix));
+}
 
 const ASSET_EXTENSIONS = [
   "woff2",

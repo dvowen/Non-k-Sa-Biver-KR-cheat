@@ -2,8 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { promises as fs } from "node:fs";
 import path from "node:path";
-
-const SITE_DIR = path.resolve("site/202604testtes004v6");
+import { SITE_DIR } from "./version-config.mjs";
 
 test("public KR site does not expose debug tools", async () => {
   const indexHtml = await fs.readFile(path.join(SITE_DIR, "index.html"), "utf8");
@@ -19,5 +18,14 @@ test("public README is a concise Korean translation notice", async () => {
   const readme = await fs.readFile("README.md", "utf8");
 
   assert.match(readme, /비공식 한국어 번역/);
+  assert.match(readme, /v0\.7/);
+  assert.doesNotMatch(readme, /v0\.6/);
   assert.doesNotMatch(readme, /funa-funa|Source URL|Run Locally|로컬 실행|debug|cheat|치트/i);
+});
+
+test("Pages deployment runs the complete test and translation audit gates", async () => {
+  const workflow = await fs.readFile(".github/workflows/pages.yml", "utf8");
+
+  assert.match(workflow, /node --test scripts\/\*\.test\.mjs serve-local\.test\.mjs/);
+  assert.match(workflow, /node scripts\/audit-translations\.mjs/);
 });
