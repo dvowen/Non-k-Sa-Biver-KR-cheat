@@ -28,10 +28,10 @@ test("rewriteGithubPagesPaths prefixes absolute local app paths with repo base",
   );
 });
 
-test("rewriteGithubPagesPaths defaults to the KR repository base path", () => {
+test("rewriteGithubPagesPaths defaults to the cheat repository base path", () => {
   assert.equal(
     rewriteGithubPagesPaths('location.href = "/202605testtest050v7/save-manager.html"'),
-    'location.href = "/Non-k-Sa-Biver-KR/202605testtest050v7/save-manager.html"',
+    'location.href = "/Non-k-Sa-Biver-KR-cheat/202605testtest050v7/save-manager.html"',
   );
 });
 

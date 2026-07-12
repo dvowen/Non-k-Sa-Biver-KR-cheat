@@ -3,6 +3,8 @@ name: Deploy GitHub Pages
 on:
   push:
     branches: ["main"]
+  pull_request:
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -36,6 +38,7 @@ jobs:
           node scripts/merge-translations.mjs
           node scripts/apply-translations.mjs
           node scripts/audit-translations.mjs
+          node scripts/prepare-cheat-build.mjs
           node scripts/build-github-pages.mjs
 
       - name: Upload artifact
@@ -44,6 +47,7 @@ jobs:
           path: dist
 
   deploy:
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

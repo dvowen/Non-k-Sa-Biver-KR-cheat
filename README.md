@@ -1,17 +1,19 @@
-# Non-k Sa-BIVER KR
+# Non-k Sa-BIVER KR Cheat
 
-`Non-k Sa-BIVER KR`는 **Non-k Sa-BIVER v0.7의 비공식 한국어 번역 및 로컬라이즈판**입니다.
+`Non-k Sa-BIVER KR Cheat`는 **Non-k Sa-BIVER v0.7의 비공식 한국어 번역 및 로컬라이즈판**에 테스트용 관리자 도구를 포함한 버전입니다.
 
 게임 내 일본어 텍스트를 한국어로 번역하고, 한국어 플레이 환경에 맞춰 일부 표현과 UI 문구를 다듬었습니다.
 
 ## 플레이
 
-https://dvowen.github.io/Non-k-Sa-Biver-KR/
+https://dvowen.github.io/Non-k-Sa-Biver-KR-cheat/
 
 ## 안내
 
 - 본 프로젝트는 원작 `Non-k Sa-BIVER v0.7`을 기반으로 한 한국어 번역판입니다.
 - 번역은 직역보다 한국어 플레이 경험을 우선해 일부 문장을 자연스럽게 의역했습니다.
+- 이 버전에는 테스트 목적의 숨겨진 관리자 도구가 포함되어 있습니다.
+- 일반 공유용 플레이는 `Non-k Sa-BIVER KR` 기본판을 권장합니다.
 - 이 게임에는 성인용 콘텐츠와 BL 요소가 포함되어 있습니다.
 - 본 저장소는 한국어 번역 및 실행 환경 정리를 위한 비공식 프로젝트입니다.
 - 원작의 권리는 원작자에게 있습니다.
