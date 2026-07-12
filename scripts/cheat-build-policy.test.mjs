@@ -28,17 +28,20 @@ test("cheat release uses its own Pages path and Korean warning", async () => {
   assert.doesNotMatch(readme, /v0\.6|funa-funa|Source URL|Run Locally|로컬 실행/i);
 });
 
-test("pull requests verify the cheat build without deploying Pages", async () => {
+test("non-main runs verify the cheat build without deploying Pages", async () => {
   const workflow = await fs.readFile(".github/workflows/pages.yml", "utf8");
   const workflowHeader = workflow.split("jobs:", 1)[0];
 
   assert.match(workflow, /pull_request:\s*\n\s*branches: \["main"\]/);
   assert.match(workflow, /node scripts\/prepare-cheat-build\.mjs/);
-  assert.match(workflow, /if: github\.event_name != 'pull_request'/);
+  assert.match(
+    workflow,
+    /if: github\.ref == 'refs\/heads\/main' && github\.event_name != 'pull_request'/,
+  );
   assert.match(workflow, /node scripts\/audit-translations\.mjs/);
   assert.doesNotMatch(workflowHeader, /pages: write|id-token: write/);
   assert.match(
     workflow,
-    /deploy:\s*\n\s*if: github\.event_name != 'pull_request'\s*\n\s*permissions:\s*\n\s*pages: write\s*\n\s*id-token: write/,
+    /deploy:\s*\n\s*if: github\.ref == 'refs\/heads\/main' && github\.event_name != 'pull_request'\s*\n\s*permissions:\s*\n\s*pages: write\s*\n\s*id-token: write/,
   );
 });

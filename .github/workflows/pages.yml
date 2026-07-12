@@ -45,7 +45,7 @@ jobs:
           path: dist
 
   deploy:
-    if: github.event_name != 'pull_request'
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     permissions:
       pages: write
       id-token: write
