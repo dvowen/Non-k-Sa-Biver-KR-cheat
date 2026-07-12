@@ -5,12 +5,11 @@ import {
   replaceJsStringLiterals,
   countReplaceableJsStringLiterals,
 } from "./translation-utils.mjs";
-import { generateDebugItems } from "./generate-debug-items.mjs";
-import { injectDebugTools } from "./inject-debug-tools.mjs";
+import { SITE_DIR } from "./version-config.mjs";
 
 const TRANSLATION_MEMORY = path.resolve("translate/translation-memory.json");
 const RAW_CHUNKS_DIR = path.resolve("raw/chunks");
-const CHUNKS_DIR = path.resolve("site/202604testtes004v6/_next/static/chunks");
+export const DEFAULT_CHUNKS_DIR = path.join(SITE_DIR, "_next", "static", "chunks");
 
 export async function listChunkFiles(dir) {
   const entries = await fs.readdir(dir, { withFileTypes: true });
@@ -33,8 +32,8 @@ export async function restoreRawJsChunks(rawDir, targetDir) {
 
 async function main() {
   const translations = JSON.parse(await fs.readFile(TRANSLATION_MEMORY, "utf8"));
-  const restored = await restoreRawJsChunks(RAW_CHUNKS_DIR, CHUNKS_DIR);
-  const files = await listChunkFiles(CHUNKS_DIR);
+  const restored = await restoreRawJsChunks(RAW_CHUNKS_DIR, DEFAULT_CHUNKS_DIR);
+  const files = await listChunkFiles(DEFAULT_CHUNKS_DIR);
   let total = 0;
 
   for (const file of files) {
@@ -49,13 +48,8 @@ async function main() {
     console.log(`${path.relative(process.cwd(), file)}: ${count}`);
   }
 
-  const debugItemCount = await generateDebugItems();
-  const injectedDebugTools = await injectDebugTools();
-
   console.log(`Restored ${restored} raw JS chunks.`);
   console.log(`Applied ${total} replacements from ${translations.length} translations.`);
-  console.log(`Generated ${debugItemCount} debug items.`);
-  console.log(injectedDebugTools ? "Injected debug tools script." : "Debug tools script already present.");
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {

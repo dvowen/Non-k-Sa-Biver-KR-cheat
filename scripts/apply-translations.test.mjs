@@ -3,7 +3,14 @@ import assert from "node:assert/strict";
 import { promises as fs } from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import { restoreRawJsChunks } from "./apply-translations.mjs";
+import {
+  DEFAULT_CHUNKS_DIR,
+  restoreRawJsChunks,
+} from "./apply-translations.mjs";
+
+test("default translation target uses the current upstream version", () => {
+  assert.match(DEFAULT_CHUNKS_DIR, /site\/202605testtest050v7\/_next\/static\/chunks$/);
+});
 
 test("restoreRawJsChunks refreshes site chunks from raw originals", async () => {
   const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "translation-apply-"));

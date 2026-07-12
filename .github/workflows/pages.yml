@@ -3,12 +3,12 @@ name: Deploy GitHub Pages
 on:
   push:
     branches: ["main"]
+  pull_request:
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
@@ -28,13 +28,15 @@ jobs:
 
       - name: Verify
         run: |
-          node --test scripts/translation-utils.test.mjs scripts/apply-translations.test.mjs scripts/debug-tools-utils.test.mjs scripts/generate-debug-items.test.mjs scripts/inject-debug-tools.test.mjs scripts/build-github-pages.test.mjs scripts/cheat-build-policy.test.mjs
+          node --test scripts/*.test.mjs serve-local.test.mjs
           node --check scripts/build-github-pages.mjs
 
       - name: Build
         run: |
           node scripts/merge-translations.mjs
           node scripts/apply-translations.mjs
+          node scripts/audit-translations.mjs
+          node scripts/prepare-cheat-build.mjs
           node scripts/build-github-pages.mjs
 
       - name: Upload artifact
@@ -43,6 +45,10 @@ jobs:
           path: dist
 
   deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

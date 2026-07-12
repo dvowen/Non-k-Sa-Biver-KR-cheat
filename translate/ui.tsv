@@ -90,8 +90,7 @@ SYSTEM	시스템		UI/system	spec name
 気絶した！	기절했다!		battle/message	
 熱射に倒れた…	열기에 쓰러졌다...		battle/message	
 ナイスファイト！	잘 싸웠어!		battle/message	
-ナイスファイト！ 生存時間:	잘 싸웠어! 생존 시간:		battle/message	
-秒 スコア:	초 스코어:		battle/message	
+ナイスファイト！\n生存時間: ${t}分${e%60}秒\nスコア: ${s}	잘 싸웠어!\n생존 시간: ${t}분 ${e%60}초\n점수: ${s}		battle/message	v0.7 dynamic template
 ボス出現！	보스 출현!		battle/message	
 ⚠️ ボス出現！	⚠️ 보스 출현!		battle/message	
 敵の気配が変わった…！	적의 기척이 달라졌다...!		battle/message	
@@ -432,3 +431,24 @@ Exp+10 (ペット用)	Exp+10 (펫용)		item/effect short
  を ${n}	 ${n}		UI/toast template fragment	
 を ${e.count}	 ${e.count}		UI/toast template fragment	
 に${c.name}	에게 ${c.name}		UI/pet template fragment	
+アルバルトからの恩返し（受け）	알베르트의 보답 (수)		gallery/event title	v0.7
+アルバルトからの恩返し（攻め）	알베르트의 보답 (공)		gallery/event title	v0.7
+身体を張った恩返し（受け）	몸으로 갚는 보답 (수)		gallery/event title	v0.7
+身体を張った恩返し（攻め）	몸으로 갚는 보답 (공)		gallery/event title	v0.7
+タガンとの時間４（攻め）	타간과의 시간 4 (공)		gallery/event title	v0.7
+タガンとの時間４（受け）	타간과의 시간 4 (수)		gallery/event title	v0.7
+タガンに責められる夜	타간에게 안기는 밤		gallery/event title	v0.7
+敵を吸い寄せる網を発射	적을 끌어당기는 그물 발사		item/effect short	v0.7
+周囲を公転するウィスプ	주위를 도는 위스프		item/effect short	v0.7
+連鎖する電撃槍	연쇄 전격 투창		item/effect short	v0.7
+周囲の敵を吹き飛ばす	주변의 적을 날려 버림		item/effect short	v0.7
+猟兵の重力網	사냥꾼의 중력 그물		item	v0.7
+敵を引き寄せる重力網を射出する。※所持しているだけで自動発動	적을 끌어당기는 중력 그물을 발사한다. ※ 소지하고 있기만 해도 자동 발동		item/description	v0.7
+護衛のウィスプ	수호 위스프		item	v0.7
+周囲を旋回し守ってくれる光の精霊を召喚する。※所持しているだけで自動発動	주위를 돌며 지켜 주는 빛의 정령을 소환한다. ※ 소지하고 있기만 해도 자동 발동		item/description	v0.7
+雷光の投げ槍	뇌광 투창		item	v0.7
+命中した敵から別の敵へと電撃が連鎖する槍。※所持しているだけで自動発動	명중한 적에게서 다른 적으로 전격이 이어지는 투창. ※ 소지하고 있기만 해도 자동 발동		item/description	v0.7
+反重力の吹き矢	반중력 바람총		item	v0.7
+敵を浮遊させ無防備にする矢を放つ。※所持しているだけで自動発動	적을 띄워 무방비 상태로 만드는 화살을 발사한다. ※ 소지하고 있기만 해도 자동 발동		item/description	v0.7
+獣避けの角笛	짐승 퇴치 뿔피리		item	v0.7
+周囲に衝撃波を放ち敵をノックバックさせる。※所持しているだけで自動発動	주위에 충격파를 일으켜 적을 밀쳐 낸다. ※ 소지하고 있기만 해도 자동 발동		item/description	v0.7

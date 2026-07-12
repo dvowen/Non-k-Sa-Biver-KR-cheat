@@ -1,30 +1,40 @@
-import test from "node:test";
 import assert from "node:assert/strict";
 import { promises as fs } from "node:fs";
 import os from "node:os";
 import path from "node:path";
+import test from "node:test";
 import { generateDebugItems } from "./generate-debug-items.mjs";
 
-test("generateDebugItems writes extracted item metadata as JSON", async () => {
+const potion = String.raw`potion:{id:"potion",name:"회복약",description:"HP 회복",effectType:"HEAL",value:50,price:100}`;
+const arrow = String.raw`arrow:{id:"arrow",name:"화살",description:"공격 강화",effectType:"PASSIVE_WEAPON",value:1,price:200}`;
+
+test("generateDebugItems scans every hashed chunk and deduplicates item ids", async () => {
   const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "debug-items-"));
-  const chunkPath = path.join(tempDir, "chunk.js");
+  const chunksDir = path.join(tempDir, "chunks");
   const outputPath = path.join(tempDir, "debug-items.json");
-  const itemText = Array.from({ length: 10 }, (_, index) => {
-    const id = `item_${index}`;
-    return `${id}:{id:"${id}",name:"아이템 ${index}",description:"설명 ${index}",effectType:"NONE",price:${index}}`;
-  }).join(",");
-  await fs.writeFile(chunkPath, `let items={${itemText}};`);
+  await fs.mkdir(chunksDir);
+  await fs.writeFile(path.join(chunksDir, "first-hash.js"), `${potion},${arrow}`);
+  await fs.writeFile(path.join(chunksDir, "second-hash.js"), potion);
 
-  const count = await generateDebugItems({ chunkPath, outputPath });
-  const generated = JSON.parse(await fs.readFile(outputPath, "utf8"));
+  const count = await generateDebugItems({ chunksDir, outputPath, expectedCount: 2 });
+  const items = JSON.parse(await fs.readFile(outputPath, "utf8"));
 
-  assert.equal(count, 10);
-  assert.equal(generated.length, 10);
-  assert.deepEqual(generated[0], {
-    id: "item_0",
-    name: "아이템 0",
-    description: "설명 0",
-    effectType: "NONE",
-    price: 0,
-  });
+  assert.equal(count, 2);
+  assert.deepEqual(items.map((item) => item.id), ["arrow", "potion"]);
+});
+
+test("generateDebugItems fails when the current version item count drifts", async () => {
+  const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "debug-items-drift-"));
+  const chunksDir = path.join(tempDir, "chunks");
+  await fs.mkdir(chunksDir);
+  await fs.writeFile(path.join(chunksDir, "items.js"), potion);
+
+  await assert.rejects(
+    generateDebugItems({
+      chunksDir,
+      outputPath: path.join(tempDir, "debug-items.json"),
+      expectedCount: 2,
+    }),
+    /Expected 2 debug items, found 1/,
+  );
 });

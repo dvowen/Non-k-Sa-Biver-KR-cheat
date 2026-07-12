@@ -1,14 +1,21 @@
 import fs from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
-import { extractAssetPaths, pathToSiteRelative } from "./asset-utils.mjs";
+import {
+  extractAssetPaths,
+  isKnownUpstreamMissingAsset,
+  pathToSiteRelative,
+} from "./asset-utils.mjs";
+import {
+  RAW_DIR,
+  SITE_ROOT_DIR,
+  UPSTREAM_ORIGIN,
+} from "./version-config.mjs";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const root = path.resolve(__dirname, "..");
-const rawDir = path.join(root, "raw");
-const siteDir = path.join(root, "site");
+const root = path.resolve(RAW_DIR, "..");
+const rawDir = RAW_DIR;
+const siteDir = SITE_ROOT_DIR;
 const extractedDir = path.join(root, "extracted");
-const upstreamOrigin = "https://funa-funa.sakura.ne.jp";
+const upstreamOrigin = UPSTREAM_ORIGIN;
 const concurrency = Number(process.env.CONCURRENCY || 6);
 const retryCount = Number(process.env.RETRIES || 1);
 
@@ -88,7 +95,9 @@ async function runPool(items, worker) {
   return results;
 }
 
-const assets = discoverAssets();
+const discoveredAssets = discoverAssets();
+const knownUpstreamMissing = discoveredAssets.filter((asset) => isKnownUpstreamMissingAsset(asset.path));
+const assets = discoveredAssets.filter((asset) => !isKnownUpstreamMissingAsset(asset.path));
 fs.mkdirSync(extractedDir, { recursive: true });
 fs.writeFileSync(path.join(extractedDir, "asset-list.txt"), assets.map((asset) => asset.path).join("\n") + "\n");
 
@@ -121,6 +130,7 @@ const manifest = {
   downloaded,
   cached,
   missing,
+  knownUpstreamMissing,
   assets: results,
 };
 
@@ -134,5 +144,6 @@ console.log(`assets=${results.length}`);
 console.log(`downloaded=${downloaded}`);
 console.log(`cached=${cached}`);
 console.log(`missing=${missing}`);
+console.log(`known_upstream_missing=${knownUpstreamMissing.length}`);
 
 if (missing > 0) process.exitCode = 1;

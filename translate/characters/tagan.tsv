@@ -175,3 +175,44 @@ source	korean	speaker	context	note
 神代の真鉄	신대의 진철	タガン	item	gift item
 不純物の少ない石炭	불순물이 적은 석탄	タガン	item	gift item
 琥珀の蜜蝋	호박 밀랍	タガン	item	gift item
+タガンに責められたい	타간에게 안기고 싶다	PLAYER	choice	v0.7 bottom route
+……は？[wait:0.5] 俺に……責められたい、だと？	……뭐?[wait:0.5] 나한테…… 안기고 싶다고?	タガン	dialogue	v0.7 bottom route
+がっはっは！[wait:0.5] お前、本当にどこまで俺を驚かせりゃ気が済むんだ！	으하하하![wait:0.5] 너, 대체 어디까지 날 놀라게 해야 직성이 풀리냐!	タガン	dialogue	v0.7 bottom route
+……いいだろう、[wait:0.5]そこまで言うなら、容赦はしねぇ。\nお前のそのイカれた熱意、俺が正面から全部ねじ伏せてやるよ。[wait:0.5]覚悟しろよ……っ！	……좋다,[wait:0.5] 그렇게까지 말한다면 봐주지 않으마.\n네 그 정신 나간 열정을 내가 정면에서 모조리 꺾어 주지.[wait:0.5] 각오해라……!	タガン	dialogue	v0.7 bottom route
+……おい、そんなに身体を硬くしてどうした。[wait:0.5]緊張してんのか？	……야, 왜 그렇게 몸을 굳히고 있어.[wait:0.5] 긴장했냐?	タガン	dialogue	v0.7 bottom route
+この俺に『責められたい』なんてデカい口を叩いたんだ。	이 나한테 "안기고 싶다"고 큰소리쳤잖아.	タガン	dialogue	v0.7 bottom route
+……まさか、[wait:0.5]今さら怖気づいて逃げようなんて思ってねぇだろうな？	……설마,[wait:0.5] 이제 와서 겁먹고 도망칠 생각은 아니겠지?	タガン	dialogue	v0.7 bottom route
+……それにしても、騎士団時代、新兵を徹底的に鍛えてやったことはあったが……	……그러고 보니 기사단 시절, 신병들을 호되게 굴려 본 적은 있지만……	タガン	dialogue	v0.7 bottom route
+まさか、こんな年になって、お前みたいな新人をベッドで可愛がることになるとはな。	설마 이 나이에 너 같은 신입을 침대에서 귀여워하게 될 줄이야.	タガン	dialogue	v0.7 bottom route
+……がっはっは！[wait:0.5] 人生、何が起きるか分からねぇもんだ	……으하하하![wait:0.5] 인생은 정말 모르는 법이군.	タガン	dialogue	v0.7 bottom route
+いいぜ、お前のその熱、俺のやり方で全部受け止めて、分からせてやる。	좋아, 네 그 열기, 내 방식대로 전부 받아 내서 제대로 알려 주마.	タガン	dialogue	v0.7 bottom route
+……ほら、力抜けよ……[wait:0.8]入れるぞ……	……자, 힘 빼……[wait:0.8] 넣는다……	タガン	scenario	v0.7 bottom route
+……なるほどな、[wait:0.5]男だろうがケツの中の感触は女と同じだな…	……그렇군,[wait:0.5] 남자라도 안쪽 감촉은 여자랑 똑같구만…	タガン	scenario	v0.7 bottom route
+つっても……男の身体を組み敷くなんて初めてだからなぁ……	그래도…… 남자 몸을 깔아뭉개는 건 처음이라 말이지……	タガン	scenario	v0.7 bottom route
+ほら、どこが気持ちいいか、正直に言ってみろ？[wait:0.8]……ここか？	자, 어디가 좋은지 솔직히 말해 봐.[wait:0.8] ……여긴가?	タガン	scenario	v0.7 bottom route
+……ぐ、ぅ……ッ！[wait:0.5] お前、そんな声出すんじゃねぇよ……	……윽……![wait:0.5] 너, 그런 소리 내지 마……	タガン	scenario	v0.7 bottom route
+滾っちまうじゃねぇか…！	더 달아오르잖아…!	タガン	scenario	v0.7 bottom route
+ん！？[wait:0.3]おっ！？	응!?[wait:0.3] 오!?	タガン	scenario	v0.7 bottom route
+おうおぅ……！[wait:0.5]いっちょ前に締め付けてくるじゃねぇか……！	오오……![wait:0.5] 제법 야무지게 조여 오잖아……!	タガン	scenario	v0.7 bottom route
+そうやって俺のを美味そうに咥え込むなんて、お前相当スキモノだな？	그렇게 내 걸 맛있다는 듯 물고 있다니, 너도 꽤 밝히는구나?	タガン	scenario	v0.7 bottom route
+……くやしい、けど……	……분하지만……	PLAYER	choice	v0.7 bottom route
+もっと、めちゃくちゃにして……	더, 엉망으로 만들어 줘……	PLAYER	choice	v0.7 bottom route
+『くやしい』だぁ？[wait:0.5] 口ではそんな生意気なこと言っておいて、中じゃあこれでもかってくらい俺のを歓迎してやがるぞ？	"분하다"고?[wait:0.5] 입으로는 그렇게 건방진 소리를 하면서, 속으로는 있는 힘껏 내 걸 반기고 있잖아?	タガン	scenario	v0.7 bottom route
+がっはっは！[wait:0.5] そうかそうか！身体は正直じゃねぇか！\n普段のあの突拍子もない余裕はどこへ行った？[wait:0.5]	으하하하![wait:0.5] 그래, 그래! 몸은 솔직하구나!\n평소 그 황당할 만큼 여유롭던 모습은 어디 갔냐?[wait:0.5]	タガン	scenario	v0.7 bottom route
+[wait:0.5]……さぁて、お喋りはここまでだ。[wait:0.5]本番はここからだぞ？	[wait:0.5]……자, 수다는 여기까지다.[wait:0.5] 진짜는 이제부터라고?	タガン	scenario	v0.7 bottom route
+……覚悟しろよ？[wait:0.5] 途中で泣いて謝っても、絶対に腰は止めてやらねぇからな……っ！	……각오해라.[wait:0.5] 중간에 울면서 빌어도 절대 허리를 멈춰 주지 않을 테니까……!	タガン	scenario	v0.7 bottom route
+……ほら、奥までしっかり味わいな……っ！	……자, 끝까지 제대로 느껴 봐라……!	タガン	scenario	v0.7 bottom route
+……ほら、[wait:0.3]ここが弱いのか！？	……자,[wait:0.3] 여기가 약한가!?	タガン	scenario	v0.7 bottom route
+たっぷり責めてやるからな……っ！	실컷 몰아붙여 주마……!	タガン	scenario	v0.7 bottom route
+……ほれ！[wait:0.3]どうだっ！？[wait:0.5]お前の中がうねって……感じてるのが全部伝わってきてるぞ……ッ！！	……자![wait:0.3] 어떠냐!?[wait:0.5] 네 안이 꿈틀대며 느끼는 게 전부 전해진다……!!	タガン	scenario	v0.7 bottom route
+おい、聞いてんのか！？[wait:0.5]ちゃんと俺を見ろ！	야, 듣고 있냐!?[wait:0.5] 똑바로 날 봐!	タガン	scenario	v0.7 bottom route
+[wait:1.0]……おいおい、お前のその、惚けたような締まりのない顔……[wait:0.5]最高にそそるぞ……ォっ！	[wait:1.0]……이봐, 그 얼빠져서 풀어진 얼굴……[wait:0.5] 최고로 꼴리는군……!	タガン	scenario	v0.7 bottom route
+……ッッ！？[wait:0.6]	……읏!?[wait:0.6]	タガン	scenario	v0.7 bottom route
+あぁっ……っ！！	아아……!!	タガン	scenario	v0.7 bottom route
+があぁあああぁぁぁっっ！！	가아아아아아앗!!	タガン	scenario	v0.7 bottom route
+はぁっ…[wait:0.8]はぁっ…[wait:0.8]はぁっ…	하아…[wait:0.8]하아…[wait:0.8]하아…	タガン	scenario	v0.7 bottom route
+……ふぅ。[wait:0.8]何日ぶりだ…？[wait:0.5]玉ン中が弾けるような感覚だったぞ……	……후우.[wait:0.8] 며칠 만이지…?[wait:0.5] 불알 안쪽이 터지는 줄 알았어……	タガン	scenario	v0.7 bottom route
+って……おい、[wait:0.5]聞こえてるのか？	……야,[wait:0.5] 듣고 있는 거냐?	タガン	scenario	v0.7 bottom route
+はい…	응…	PLAYER	choice	v0.7 bottom route
+……ったく、お前って奴は。[wait:0.5]	……정말, 너란 녀석은.[wait:0.5]	タガン	scenario	v0.7 bottom route
+俺をここまで猛らせて本気にさせるなんて、[wait:0.5]大した新人だよ……	날 이렇게까지 달아오르게 해서 진심으로 덤비게 만들다니,[wait:0.5] 대단한 신입이야……	タガン	scenario	v0.7 bottom route
